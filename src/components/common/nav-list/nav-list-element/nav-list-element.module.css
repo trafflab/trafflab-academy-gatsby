@@ -1,0 +1,30 @@
+.listElement {
+  color: inherit;
+}
+
+.link {
+  text-decoration: none;
+  transition: var(--link-opacity-transition);
+  color: inherit;
+
+  font-size: var(--font-size-body-big);
+  font-family: var(--font-basic);
+  font-weight: 300;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 480px) {
+  .listElement {
+    margin: 0 8rem 8rem
+  }
+
+  .link {
+    
+    font-size: var(--font-size-body-small);
+    line-height: 1.35;
+  }
+  
+}

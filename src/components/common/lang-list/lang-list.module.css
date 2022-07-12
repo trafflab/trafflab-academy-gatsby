@@ -1,0 +1,33 @@
+.langList {
+  position: relative;
+}
+
+.select {
+  background-color: transparent;
+  color: var(--color-gray-2);
+  font-size: var(--font-size-body-middle);
+  font-family: var(--font-basic);
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  line-height: 1.2;
+  outline: none;
+  overflow: visible;
+  margin-bottom: -1rem;
+}
+
+.list {
+  position: absolute;
+}
+
+.link {
+
+}
+
+@media screen and (max-width: 480px) {
+  .select {
+    font-size: var(--font-size-body-small);
+  }
+}

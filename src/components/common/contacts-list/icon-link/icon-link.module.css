@@ -1,0 +1,11 @@
+.listElement {
+  transition: var(--link-opacity-transition);
+}
+
+.listElement:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.link {
+  
+}

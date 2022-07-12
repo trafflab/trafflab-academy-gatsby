@@ -1,0 +1,136 @@
+.footer {
+  padding-bottom: 40rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 1200rem;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas: 
+  'logo nav contacts'
+  'logo year contacts';
+  justify-items: center;
+}
+
+.logoContainer {
+  grid-area: logo;
+  margin-top: -7rem;
+}
+
+.navContainer {
+  grid-area: nav;
+  width: 522rem;
+}
+
+.year {
+  grid-area: year;
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  align-self: end;
+}
+
+.contactsContainer {
+  grid-area: contacts;
+  width: 232rem;
+  margin-top: -10rem;
+}
+
+.otherContactslist {
+  margin-top: 12rem;
+}
+
+.listEement {
+  display: flex;
+  align-items: center;
+}
+
+.mailto {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-white);
+  font-weight: 300;
+  margin-left: 10rem;
+  text-decoration:  none;
+  transition: var(--link-opacity-transition);
+}
+
+
+.mailto:hover {
+  opacity: 0.8;
+}
+
+
+.contact {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-white);
+  font-weight: 300;
+  margin-left: 10rem;
+  text-decoration:  none;
+}
+
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-bottom: 23rem;
+
+  }
+  
+  .content {
+    width: 290rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas: 
+    'logo'
+    'nav'
+    'contacts'
+    'year';
+    justify-items: center;
+    justify-content: center;
+  }
+
+
+  .logoContainer {
+    margin-bottom: 16rem;
+    margin-top: 0;
+  }
+
+  .navContainer {
+    width: 100%;
+    margin-bottom: 8rem;
+    overflow: hidden;
+  }
+
+  .contactsContainer {
+    width: 240rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24rem;
+  }
+
+  .otherContactslist {
+    margin-top: 24rem;
+  }
+
+  .contact {
+    font-size: var(--font-size-body-middle);
+    margin-left: 4rem;
+  }
+
+  .mailto {
+    font-size: var(--font-size-body-middle);
+    margin-left: 4rem;
+  }
+
+  .year {
+    font-size: var(--font-size-body-small);
+  }
+}

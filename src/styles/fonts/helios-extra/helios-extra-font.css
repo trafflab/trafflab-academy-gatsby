@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'HeliosExt';
+    src: local('Helios Extra Light'), local('Helios-Extra-Light'),
+        url('HeliosExtLightC.woff2') format('woff2'),
+        url('HeliosExtLightC.woff') format('woff'),
+        url('HeliosExtLightC.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+font-family: 'HeliosExt';
+src: local('Helios Extra Regular'), local('Helios-Extra-Regular'),
+    url('HeliosExtC.woff2') format('woff2'),
+    url('HeliosExtC.woff') format('woff'),
+    url('HeliosExtC.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HeliosExt';
+src: local('Helios Extra Bold'), local('Helios-Extra-Bold'),
+    url('HeliosExtC-Bold.woff2') format('woff2'),
+    url('HeliosExtC-Bold.woff') format('woff'),
+    url('HeliosExtC-Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}

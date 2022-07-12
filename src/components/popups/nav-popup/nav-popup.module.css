@@ -1,0 +1,57 @@
+.navPopup {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 24rem;
+  right: 24rem;
+  background: url(../../../images/icons/close-white.svg) no-repeat center;
+  background-size: 24rem 24rem;
+  width: 24rem;
+  height: 24rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: var(--link-opacity-transition);
+  padding: 0;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.logoContainer {
+  position: absolute;
+  top: 24rem;
+  left: 20rem;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.nav {
+
+}
+
+.list {
+  display: grid;
+  gap: 30rem;
+  justify-items: center;
+}
+
+.contactsContainer {
+  width: 280rem;
+  margin-bottom: 24rem;
+}

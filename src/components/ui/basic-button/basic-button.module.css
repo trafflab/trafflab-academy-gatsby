@@ -1,0 +1,34 @@
+.button {
+  width: 100%;
+  height: 62rem;
+  border-radius: 40rem;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--color-red-1);
+  transition: background-color 0.35s ease-out;
+
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: var(--color-red-2);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: var(--color-red-3);
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    height: 40rem;
+    font-size: var(--font-size-body-middle);
+
+  }
+}

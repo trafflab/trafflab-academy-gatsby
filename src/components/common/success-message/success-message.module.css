@@ -1,0 +1,60 @@
+.successMessage {
+  background: rgba(61, 202, 63, 0.1);
+  backdrop-filter: blur(30px);
+  border-radius: 10rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 15rem;
+  position: fixed;
+  bottom: -100rem;
+  right: calc(50% - 185rem);
+  width: 370rem;
+  z-index: 10;
+  transition: 0.15s ease-out bottom;
+  box-sizing: border-box;
+}
+
+.isShown {
+  bottom: 30rem;
+}
+
+.icon {
+  background-image: url(../../../images/icons/checkmark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 32rem;
+  height: 32rem;
+  margin-left: -15rem;
+}
+
+.message {
+  font-size: var(--font-size-small);
+  color: var(--color-white);
+  font-family: var(--font-basic);
+  font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+  .successMessage {
+    gap: 10rem;
+    padding: 15rem;
+    bottom: -100rem;
+    right: 20rem;
+    width: 280rem;
+
+  }
+  
+  .isShown {
+    bottom: 30rem;
+  }
+
+  
+  .message {
+    font-size: var(--font-size-body-middle);
+  }
+}

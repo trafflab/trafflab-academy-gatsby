@@ -1,0 +1,16 @@
+.wrapper {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  background-color: var(--color-dark-2);
+  background-size: 24rem 24rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.wrapper.isSmall {
+  width: 32rem;
+  height: 32rem;
+  background-size: 16rem 16rem;
+}

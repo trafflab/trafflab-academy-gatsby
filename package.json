@@ -1,0 +1,36 @@
+{
+  "name": "tarfflab-academy-gatsby",
+  "version": "1.0.0",
+  "private": true,
+  "description": "tarfflab-academy-gatsby",
+  "author": "Alan Ibatullin",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.8",
+    "gatsby": "^4.18.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-google-gtag": "^4.18.0",
+    "gatsby-plugin-image": "^2.18.0",
+    "gatsby-plugin-manifest": "^4.18.0",
+    "gatsby-plugin-react-helmet": "^5.18.0",
+    "gatsby-plugin-sharp": "^4.18.0",
+    "gatsby-plugin-sitemap": "^5.18.0",
+    "gatsby-source-filesystem": "^4.18.0",
+    "gatsby-transformer-remark": "^5.18.0",
+    "gatsby-transformer-sharp": "^4.18.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-fast-marquee": "^1.3.2",
+    "react-helmet": "^6.1.0",
+    "react-yandex-metrika": "^2.6.0"
+  }
+}

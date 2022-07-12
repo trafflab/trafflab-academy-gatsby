@@ -1,0 +1,45 @@
+.fixedContacts {
+  position: fixed;
+  background-color: transparent;
+  top: 258rem;
+  left: 40rem;
+  z-index: 2;
+}
+
+.listContainer {
+  width: max-content;
+  height: 280rem;
+  margin-bottom: 72rem;
+}
+
+.upArrow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-radius: 50%;
+  transition: var(--link-opacity-transition);
+}
+
+.upButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.upText {
+  margin-top: 12rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--color-white);
+  font-size: var(--font-size-body-small);
+  font-family: var(--font-basic);
+  font-weight: 300;
+  line-height: 1;
+}

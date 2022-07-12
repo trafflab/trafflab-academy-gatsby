@@ -1,0 +1,303 @@
+.backgroundItems {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.backgroundItems > div {
+  position: absolute;
+}
+
+
+.net1 {
+  top: 938rem;
+  left: 0;
+  width: 124rem;
+  z-index: 5;
+  height: 150rem;
+}
+.net2 {
+  top: 3020rem;
+  left: 0;
+  width: 124rem;
+  z-index: 5;
+  height: 150rem;
+}
+.net3 {
+  top: 3785rem;
+  left: 0;
+  width: 124rem;
+  z-index: 5;
+  height: 150rem;
+}
+.net4 {
+  top: 5035rem;
+  left: 0;
+  width: 124rem;
+  z-index: 5;
+  height: 150rem;
+}
+
+
+.line1 {
+  top: 1910rem;
+  left: 0;
+  width: 100%;
+  height: 91rem;
+  z-index: 5;
+
+}
+.line2 {
+  top: 2852rem;
+  left: 0;
+  width: 100%;
+  height: 91rem;
+  z-index: 5;
+
+}
+.line3 {
+  top: 3640rem;
+  left: 0rem;
+  width: 100%;
+  height: 91rem;
+  z-index: 5;
+
+}
+.line4 {
+  top: 4650rem;
+  left: 0rem;
+  width: 100%;
+  height: 91rem;
+  z-index: 5;
+
+}
+
+
+
+.blurredBubble2 {
+  top: 1081rem;
+  left: 0;
+  width: 649rem;
+  height: 876rem;
+}
+.blurredBubble3 {
+  top: 2445rem;
+  right: 0;
+  width: 431rem;
+  height: 1028rem;
+}
+.blurredBubble4 {
+  top: 3225rem;
+  left: 0rem;
+  width: 900rem;
+  height: 925rem;
+}
+.blurredBubble5 {
+  top: 4750rem;
+  right: 0;
+  width: 620rem;
+  height: 620rem;
+}
+.blurredBubble6 {
+  top: 5070rem;
+  left: 0;
+  width: 560rem;
+  height: 760rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  .backgroundItems {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320rem;
+    z-index: 1;
+  }
+
+  .net1 {
+    display: none;
+  }
+  .net2 {
+    display: none;
+  }
+  .net3 {
+    display: none;
+  }
+  .net4 {
+    display: none;
+  }
+  
+
+  .line1 {
+    top: 1433rem;
+    left: 0;
+    width: 320rem;
+    height: 32rem;
+  }
+  .line2 {
+    top: 2523rem;
+    left: 0;
+    width: 320rem;
+    height: 32rem;
+  }
+  .line3 {
+    top: 3050rem;
+    left: 0rem;
+    width: 320rem;
+    height: 32rem;
+  }
+  .line4 {
+    top: 3645rem;
+    left: 0rem;
+    width: 320rem;
+    height: 32rem;
+  }
+  
+  
+  .blurredBubble2 {
+    top: 1155rem;
+    left: 0;
+    width: 320rem;
+    height: 546rem;
+  }
+  .blurredBubble3 {
+    top: 2240rem;
+    right: 0;
+    width: 320rem;
+    height: 545rem;
+  }
+  .blurredBubble4 {
+    top: 2880rem;
+    left: 0rem;
+    width: 277rem;
+    height: 490rem;
+  }
+  .blurredBubble5 {
+    top: 3666rem;
+    right: 0;
+    width: 267rem;
+    height: 530rem;
+  }
+  .blurredBubble6 {
+    top: 4030rem;
+    left: 0;
+    width: 311rem;
+    height: 620rem;
+  }
+}
+
+
+
+
+.net1en {
+  top: 960em!important;
+}
+.net2en {
+  top: 3024rem;
+}
+.net3en {
+  top: 3765rem;
+}
+.net4en {
+  top: 4970rem;
+}
+
+
+.line1en {
+  top: 1921rem;
+}
+.line2en {
+  top: 2888rem;
+}
+.line3en {
+  top: 3640rem;
+}
+.line4en {
+  top: 4590rem;
+}
+
+
+.blurredBubble2en {
+  top: 1177rem;
+}
+.blurredBubble3en {
+  top: 2572rem;
+}
+.blurredBubble4en {
+  top: 3225rem;
+}
+.blurredBubble5en {
+  top: 4670rem;
+}
+.blurredBubble6en {
+  top: 5020rem;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .line1en {
+    top: 1439rem;
+  }
+  .line2en {
+    top: 2490rem;
+  }
+  .line3en {
+    top: 3010rem;
+  }
+  .line4en {
+    top: 3622rem;
+  }
+  
+
+  .blurredBubble2en {
+    top: 1147rem;
+  }
+  .blurredBubble3en {
+    top: 2260rem;
+  }
+  .blurredBubble4en {
+    top: 2850rem;
+  }
+  .blurredBubble5en {
+    top: 3643rem;
+  }
+  .blurredBubble6en {
+    top: 3920rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .line1ua {
+    top: 1439rem;
+  }
+  .line2ua {
+    top: 2490rem;
+  }
+  .line3ua {
+    top: 3010rem;
+  }
+  .line4ua {
+    top: 3622rem;
+  }
+  
+
+  .blurredBubble2ua {
+    top: 1147rem;
+  }
+  .blurredBubble3ua {
+    top: 2260rem;
+  }
+  .blurredBubble4ua {
+    top: 2850rem;
+  }
+  .blurredBubble5ua {
+    top: 3643rem;
+  }
+  .blurredBubble6ua {
+    top: 3920rem;
+  }
+}
