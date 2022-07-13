@@ -1,0 +1,29 @@
+.card {
+  background: linear-gradient(233.99deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 45.83%);
+  backdrop-filter: blur(40px);
+  padding: 40rem 89rem 40rem 40rem;
+  display: grid;
+  gap: 16rem;
+  box-sizing: border-box;
+  grid-auto-flow: column;
+  width: max-content;
+}
+
+.textContainer {
+  width: 270rem;
+}
+
+.title {
+  font-size: var(--fz-c-big);
+  font-weight: 700;
+  line-height: 32rem;
+  color: var(--c-white);
+  margin-bottom: 8rem;
+}
+
+.text {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-1)
+}

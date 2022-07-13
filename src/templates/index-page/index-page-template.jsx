@@ -3,13 +3,13 @@ import { PageLayout, IndexPageLayout } from "../../components/layouts/";
 import { FormPopup } from "../../components/popups";
 import {
   TrafficSources,
-  WhatWeDo,
-  Ecosystem,
-  Blog,
   PartnersMarquee,
-  Vacancies,
+  WhatIsIt,
   PageForm,
+  Opening,
+  ItIsForYou
 } from '../../components/sections';
+import { FormContext } from "../../utils/contexts";
 
 export default function IndexPage() {
 
@@ -21,15 +21,19 @@ export default function IndexPage() {
   return (
     <PageLayout>
       <IndexPageLayout>
-        {/* <TrafficSources />
-        <WhatWeDo openFormPopupHandler={openFormPopup}/>
-        <Ecosystem />
-        <Blog openArticlePopupHandler={openArticlePopup}/>
-        <PartnersMarquee />
-        <Vacancies />
-        <PageForm /> */}
-
-        {/* <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/> */}
+        <FormContext.Provider value={openFormPopup}>
+          <Opening />
+          <WhatIsIt />
+          <ItIsForYou />
+          {/* <TrafficSources />
+          <WhatWeDo openFormPopupHandler={openFormPopup}/>
+          <Ecosystem />
+          <Blog openArticlePopupHandler={openArticlePopup}/>
+          <PartnersMarquee />
+          <Vacancies />
+          <PageForm /> */}
+          {/* <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/> */}
+        </FormContext.Provider>
       </IndexPageLayout>
     </PageLayout>
   )

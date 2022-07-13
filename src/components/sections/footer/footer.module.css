@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 40rem;
+  padding-bottom: 65rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,9 +28,9 @@
 
 .year {
   grid-area: year;
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-gray-2);
+  font-family: var(--f-basic);
+  font-size: var(--fz-b-big);
+  color: var(--c-gray-2);
   align-self: end;
 }
 
@@ -47,16 +47,17 @@
 .listEement {
   display: flex;
   align-items: center;
+  font-size: var(--fz-b-big);
+  font-family: var(--f-basic);
 }
 
 .mailto {
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-white);
+  
+  color: var(--c-white);
   font-weight: 300;
   margin-left: 10rem;
   text-decoration:  none;
-  transition: var(--link-opacity-transition);
+  transition: var(--tr-link-opacity);
 }
 
 
@@ -66,9 +67,9 @@
 
 
 .contact {
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-white);
+  font-family: var(--f-basic);
+  font-size: var(--fz-body-big);
+  color: var(--c-white);
   font-weight: 300;
   margin-left: 10rem;
   text-decoration:  none;
@@ -78,7 +79,6 @@
 @media screen and (max-width: 480px) {
   .footer {
     padding-bottom: 23rem;
-
   }
   
   .content {
@@ -121,16 +121,16 @@
   }
 
   .contact {
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
     margin-left: 4rem;
   }
 
   .mailto {
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
     margin-left: 4rem;
   }
 
   .year {
-    font-size: var(--font-size-body-small);
+    font-size: var(--fz-body-small);
   }
 }

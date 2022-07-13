@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-color: var(--color-dark-2);
+  background-color: var(--c-dark-1);
   position: relative;
   display: grid;
   grid-template-rows: max-content 1fr max-content;

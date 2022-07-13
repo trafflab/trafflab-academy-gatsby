@@ -1,0 +1,33 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "empty1 article1"
+  "article2 empty2"
+  "empty3 article3";
+  width: 1200rem;
+  margin-top: -350rem;
+}
+
+.listElement1 {
+  grid-area: article1;
+}
+.listElement1 > article {
+  border-radius: 24rem 24rem 24rem 0;
+}
+ 
+.listElement2 {
+  grid-area: article2;
+  justify-self: end;
+}
+.listElement2 > article {
+  border-radius: 24rem 0 0 24rem;
+}
+
+.listElement3 {
+  grid-area: article3;
+}
+.listElement3 > article {
+  border-radius: 0 24rem 24rem 24rem;
+}

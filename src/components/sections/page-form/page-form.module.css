@@ -5,7 +5,7 @@
 }
 
 .content {
-  background-color: var(--color-dark-1);
+  background-color: var(--c-dark-1);
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -46,9 +46,9 @@
 }
 
 .text {
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-gray-2);
+  font-family: var(--f-basic);
+  font-size: var(--fz-body-big);
+  color: var(--c-gray-2);
   margin-bottom: 24rem;
   line-height: 1.6;
 }
@@ -90,7 +90,7 @@
   }
 
   .text {
-    font-size: var(--font-size-body-big);
+    font-size: var(--fz-body-big);
     margin-bottom: 24rem;
     line-height: 1.57;
 

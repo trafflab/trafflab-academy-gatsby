@@ -3,7 +3,7 @@
   background-color: transparent;
   display: flex;
   justify-content: center;
-  padding: 25rem 0 25rem;
+  padding-top: 20rem;
   z-index: 2;
   position: relative;
 }
@@ -33,7 +33,7 @@
 @media screen and (max-width: 480px) {
 
   .header {
-    padding: 20rem 0 70rem;
+    padding-top: 20rem
   }
 
   .content {

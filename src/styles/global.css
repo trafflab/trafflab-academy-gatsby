@@ -11,30 +11,31 @@ html {
 }
 
 :root {
-  --font-basic: 'HeliosExt';
-  --color-white: #fff;
-  --color-black: #000;
+  --c-white: #fff;
+  --c-black: #000;
+  --c-dark-1: #131313;
+  --c-dark-2: #181818;
+  --c-gray-1: #B4B4B4;
+  --c-gray-2:#ADADAD;
+  --c-purple: #CC99FF;
+  --c-blue: #699CFC;
+  --c-red: #FF6666;
+  --c-green: #3DCA3F;
 
-  --color-dark-1: #131313;
-  --color-dark-2: #181818;
-  
-  --color-gray-1: #B4B4B4;
-  --color-gray-2:#ADADAD;
+  --f-basic: 'HeliosExt';
 
-  --color-purple: #CC99FF;
-  
   /* relative to 1440px */
-  --font-size-h-big: 42rem;
-  --font-size-h-medium: 36rem;
-  --font-size-h-small: 24rem; ;
-  --font-size-c-big: 22rem;
-  --font-size-c-middle: 20rem;
-  --font-size-c-small: 18rem;
-  --font-size-b-big: 16rem;
-  --font-size-b-middle: 14rem;
-  --font-size-b-small: 12rem;
+  --fz-h-big: 42rem;
+  --fz-h-medium: 36rem;
+  --fz-h-small: 24rem; ;
+  --fz-c-big: 22rem;
+  --fz-c-middle: 20rem;
+  --fz-c-small: 18rem;
+  --fz-b-big: 16rem;
+  --fz-b-middle: 14rem;
+  --fz-b-small: 12rem;
 
-  --link-opacity-transition: linear 0.35s opacity;
+  --tr-link-opacity: linear 0.35s opacity;
 }
 
 body {

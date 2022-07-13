@@ -1,5 +1,5 @@
 .listElement {
-  transition: var(--link-opacity-transition);
+  transition: var(--tr-link-opacity);
 }
 
 .listElement:hover {

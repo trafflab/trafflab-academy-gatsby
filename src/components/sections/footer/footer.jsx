@@ -11,10 +11,10 @@ import { Link } from "gatsby";
 
 export default function Footer() {
   const is480 = React.useContext(Is480Context)
-  let year
+  const [year, setYear] = React.useState('');
 
   React.useEffect(() => {
-    year = new Date().getFullYear();
+    setYear(new Date().getFullYear())
   }, []);
 
   return (
@@ -23,10 +23,10 @@ export default function Footer() {
         <div className={styles.logoContainer}><Link to={'/'}><Logo /></Link></div>
 
         <div className={styles.navContainer}><NavList isFooter={true} /></div>
-        <p className={styles.year}>{year}&copy;TraffLab. Все права защищены.</p>
+        <p className={styles.year}>{year} &copy; TraffLab. Все права защищены.</p>
 
         <div className={styles.contactsContainer}>
-          <ContactsList intoRow={true} isSmall={is480} />
+          <ContactsList />
           <ul className={styles.otherContactslist}>
 
             <li className={styles.listEement}>

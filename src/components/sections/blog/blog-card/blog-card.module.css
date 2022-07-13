@@ -39,7 +39,7 @@
 .textContainer {
   height: 138rem;
   width: 100%;
-  font-family: var(--font-basic);
+  font-family: var(--f-basic);
   border-radius: 24rem;
   backdrop-filter: blur(24px);
   background: rgba(18, 18, 18, 0.6);
@@ -57,8 +57,8 @@
 }
 
 .title {
-  font-size: var(--font-size-body-big);
-  color: var(--color-white);
+  font-size: var(--fz-body-big);
+  color: var(--c-white);
   margin-bottom: 8rem;
   line-height: 1.5;
   width: 100%;
@@ -67,8 +67,8 @@
 }
 
 .text {
-  font-size: var(--font-size-body-small);
-  color: var(--color-gray-2);
+  font-size: var(--fz-body-small);
+  color: var(--c-gray-2);
   line-height: 1.5;
   width: 100%;
   overflow: hidden;
@@ -104,8 +104,8 @@
 
 
   .title {
-    font-size: var(--font-size-body-middle);
-    color: var(--color-white);
+    font-size: var(--fz-body-middle);
+    color: var(--c-white);
     margin-bottom: 8rem;
     line-height: 1.42;
     max-height: 40rem;
@@ -113,8 +113,8 @@
   }
   
   .text {
-    font-size: var(--font-size-body-small);
-    color: var(--color-gray-2);
+    font-size: var(--fz-body-small);
+    color: var(--c-gray-2);
     line-height: 1.33;
     max-height: 30rem;
   }

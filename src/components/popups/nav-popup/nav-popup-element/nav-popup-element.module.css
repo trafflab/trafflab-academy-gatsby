@@ -3,13 +3,13 @@
 }
 
 .link {
-  font-size: var(--font-size-small);
-  color: var(--color-white);
+  font-size: var(--fz-small);
+  color: var(--c-white);
   font-weight: 700;
-  font-family: var(--font-basic);
+  font-family: var(--f-basic);
   text-decoration: none;
   line-height: 1.44;
-  transition: var(--link-opacity-transition);
+  transition: var(--tr-link-opacity);
 }
 
 .link:hover {

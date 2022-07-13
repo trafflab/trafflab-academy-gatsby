@@ -7,28 +7,28 @@
   margin: 0;
   padding: 0;
 
-  background-color: var(--color-red-1);
+  background-color: var(--c-purple);
   transition: background-color 0.35s ease-out;
 
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-white);
+  font-family: var(--f-basic);
+  font-size: var(--fz-b-big);
+  color: var(--c-black);
   font-weight: 700;
 }
 
 .button:hover {
-  background-color: var(--color-red-2);
+  background-color: var(--c-red-2);
   cursor: pointer;
 }
 
 .button:active {
-  background-color: var(--color-red-3);
+  background-color: var(--c-red-3);
 }
 
 @media screen and (max-width: 480px) {
   .button {
     height: 40rem;
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
 
   }
 }

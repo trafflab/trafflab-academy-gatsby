@@ -18,7 +18,7 @@
   border: none;
   outline: none;
   background-color: transparent;
-  transition: var(--link-opacity-transition);
+  transition: var(--tr-link-opacity);
   padding: 0;
 }
 

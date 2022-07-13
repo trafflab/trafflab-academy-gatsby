@@ -1,0 +1,18 @@
+.card {
+  background: linear-gradient(233.99deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 45.83%);
+  backdrop-filter: blur(40px);
+  padding: 24rem;
+  display: grid;
+  gap: 16rem;
+  box-sizing: border-box;
+  width: 275rem;
+  border-radius: 24rem;
+}
+
+.text {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-1);
+  font-family: var(--f-basic);
+}

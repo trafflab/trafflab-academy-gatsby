@@ -19,9 +19,9 @@
 .title {
   width: 1200rem;
   display: block;
-  font-family: var(--font-basic);
-  font-size: var(--font-size-middle);
-  color: var(--color-white);
+  font-family: var(--f-basic);
+  font-size: var(--fz-middle);
+  color: var(--c-white);
   font-weight: 700;
   margin-bottom: 32rem;
 }
@@ -48,7 +48,7 @@
   
   .title {
     width: 280rem;
-    font-size: var(--font-size-small);
+    font-size: var(--fz-small);
     margin-bottom: 17rem;
   }
   

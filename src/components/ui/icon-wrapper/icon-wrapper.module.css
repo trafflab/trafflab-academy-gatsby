@@ -1,0 +1,12 @@
+.wrapper {
+  padding: 12rem;
+  border-radius: 12rem;
+  box-sizing: border-box;
+  width: max-content;
+  height: max-content;
+}
+
+.icon {
+  width: 24rem;
+  height: 24rem;
+}

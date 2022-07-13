@@ -10,7 +10,7 @@
 
 .content {
   border-radius: 40rem;
-  background-color: var(--color-dark-1);
+  background-color: var(--c-dark-1);
   width: 278rem;
   height: 192rem;
   display: flex;
@@ -30,8 +30,8 @@
 }
 
 .title {
-  color: var(--color-white);
-  font-size: var(--font-size-small);
+  color: var(--c-white);
+  font-size: var(--fz-small);
   line-height: 1.44;
 }
 
@@ -55,7 +55,7 @@
   }
 
   .title {
-    font-size: var(--font-size-body-small);
+    font-size: var(--fz-body-small);
     line-height: 1.3;
   }
 }

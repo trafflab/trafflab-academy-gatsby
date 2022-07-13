@@ -9,21 +9,21 @@
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-basic);
+  font-family: var(--f-basic);
   margin-bottom: 32rem;
 }
 
 .title {
-  font-size: var(--font-size-big);
-  color: var(--color-white);
+  font-size: var(--fz-big);
+  color: var(--c-white);
   font-weight: 700;
   line-height: 1.22;
   margin-bottom: 12rem;
 }
 
 .text {
-  font-size: var(--font-size-small);
-  color: var(--color-gray-2);
+  font-size: var(--fz-small);
+  color: var(--c-gray-2);
   font-weight: 300;
   line-height: 1.4;
 }
@@ -38,13 +38,13 @@
   }
 
   .title {
-    font-size: var(--font-size-middle);
+    font-size: var(--fz-middle);
     line-height: 1.4;
     margin-bottom: 8rem;
   }
 
   .text {
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
     line-height: 1.57;
     width: 100%!important;
   }

@@ -4,12 +4,12 @@
 
 .link {
   text-decoration: none;
-  transition: var(--link-opacity-transition);
-  color: inherit;
+  transition: var(--tr-link-opacity);
+  color: var(--color-gray-2);
 
-  font-size: var(--font-size-body-big);
-  font-family: var(--font-basic);
-  font-weight: 300;
+  font-size: var(--fz-b-big);
+  font-family: var(--f-basic);
+  font-weight: 400;
 }
 
 .link:hover {
@@ -22,8 +22,7 @@
   }
 
   .link {
-    
-    font-size: var(--font-size-body-small);
+    font-size: var(--fz-b-small);
     line-height: 1.35;
   }
   

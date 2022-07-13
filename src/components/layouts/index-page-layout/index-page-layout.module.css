@@ -16,5 +16,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30rem 160rem;
+  padding: 30rem 0 160rem;
 }

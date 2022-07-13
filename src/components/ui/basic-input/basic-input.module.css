@@ -1,10 +1,10 @@
 .input {
-  border: 1rem solid var(--color-gray-2);
+  border: 1rem solid var(--c-gray-2);
   padding: 20rem 24rem;
-  color: var(--color-gray-2);
+  color: var(--c-gray-2);
   font-weight: 300;
-  font-size: var(--font-size-body-big);
-  font-family: var(--font-basic);
+  font-size: var(--fz-body-big);
+  font-family: var(--f-basic);
   
   height: 60rem;
   width: 100%;
@@ -18,7 +18,7 @@
 @media screen and (max-width: 480px) {
   .input {
     padding: 9rem 24rem;
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
     height: 40rem;
     line-height: 1.55;
 

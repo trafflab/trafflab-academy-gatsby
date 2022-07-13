@@ -4,9 +4,9 @@
 
 .select {
   background-color: transparent;
-  color: var(--color-gray-2);
-  font-size: var(--font-size-body-middle);
-  font-family: var(--font-basic);
+  color: var(--c-gray-2);
+  font-size: var(--fz-body-middle);
+  font-family: var(--f-basic);
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -28,6 +28,6 @@
 
 @media screen and (max-width: 480px) {
   .select {
-    font-size: var(--font-size-body-small);
+    font-size: var(--fz-body-small);
   }
 }

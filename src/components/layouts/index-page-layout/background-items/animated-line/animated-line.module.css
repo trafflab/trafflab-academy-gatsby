@@ -28,14 +28,14 @@
 }
 
 .isRight .divLineRed {
-  background-color: var(--color-dark-1);
+  background-color: var(--c-dark-1);
   
 }
 
 .divLineWhite {
   height: 1rem;
   width: 100%;
-  background-color: var(--color-dark-1);
+  background-color: var(--c-dark-1);
 }
 
 .isRight .divLineWhite {

@@ -33,9 +33,9 @@
 }
 
 .message {
-  font-size: var(--font-size-small);
-  color: var(--color-white);
-  font-family: var(--font-basic);
+  font-size: var(--fz-small);
+  color: var(--c-white);
+  font-family: var(--f-basic);
   font-weight: 300;
 }
 
@@ -55,6 +55,6 @@
 
   
   .message {
-    font-size: var(--font-size-body-middle);
+    font-size: var(--fz-body-middle);
   }
 }

@@ -2,46 +2,95 @@
   width: 100%;
   background-color: transparent;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: relative;
   height: 100%;
   z-index: 2;
+  padding-bottom: 160rem;
 }
 
 .content {
   width: 1200rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 650rem 1fr;
+  gap: 10rem;
 }
 
 .textContainer {
   position: relative;
   z-index: 4;
-  font-family: var(--font-basic);
+  font-family: var(--f-basic);
+  color: var(--c-white);
+  width: 650rem;
+  margin-top: 91rem;
 }
+
+.about {
+  display: grid;
+  gap: 16rem;
+  grid-auto-flow: column;
+  width: max-content;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.tag {
+  padding: 8rem 12rem;
+  font-size: var(--fz-b-small);
+  border: 1rem solid rgba(255, 255, 255, 0.16);
+  width: max-content;
+  border-radius: 16rem;
+  line-height: 16rem;
+}
+
+.time {
+  font-size: var(--fz-b-small);
+  font-weight: 400;
+  line-height: 16rem;
+}
+
 
 .title {
-  font-size: var(--font-size-large);
-  color: var(--color-white);
+  font-size: var(--fz-h-big);
   font-weight: 700;
-  font-family: 'HeliosExt';
-  width: 570rem;
-  line-height: 1.15;
+  line-height: 62rem;
+  color: var(--c-white);
+  margin-bottom: 12rem;
 }
 
-.subtitle {
-  color: var(--color-gray-2);
-  font-size: 22rem;
-  font-weight: 300;
-  width: 280rem;
-  margin-bottom: 32rem;
-  line-height: 1.55;
+.text {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-2);
+  margin-bottom: 40rem;
+}
+
+.imageContainer {
+  width: 500rem;
+  height: 750rem;
 }
 
 .buttonContainer {
-  width: 245rem;
+  width: 304rem;
+  margin-bottom: 23rem;
 }
+
+.gift {
+  display: grid;
+  gap: 16rem;
+  grid-auto-flow: column;
+  width: 325rem;
+}
+
+.giftText {
+  font-size: var(--fz-c-small);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-1)
+}
+
 
 @media screen and (max-width: 480px) {
   .content {
@@ -49,27 +98,11 @@
     justify-content: center;
     align-items: flex-start;
   }
-  .title {
-    font-size: var(--font-size-middle);
-    width: max-content;
-    line-height: 1.41;
-    margin-bottom: 8rem;
-
-  }
-  .subtitle {
-    font-size: var(--font-size-body-middle);
-    margin-bottom: 24rem;
-    width: max-content;
-  }
 
   .textContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-
-  .buttonContainer {
-    width: 177rem;
   }
 
 }
