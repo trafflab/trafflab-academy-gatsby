@@ -17,6 +17,10 @@ export default function PartnersMarquee() {
                   gatsbyImageData(quality: 95, layout: CONSTRAINED )
                 }
               }
+              dimensionsStyle {
+                width
+                height
+              }
             }
           }
         }

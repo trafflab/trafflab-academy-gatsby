@@ -6,56 +6,161 @@
   z-index: 1;
 }
 
-.b1 {
+.bubbles {
   position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.bubbles > div {
+  position: absolute;
+}
+
+.b1 {
+  top: 0;
+  left: 0;
+  width: 497rem;
+  height: 589rem;
 }
 
 .b2 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 0rem;
+  right: 0rem;
+  width: 879rem;
+  height: 841rem;
 }
 
 .b3 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 720rem;
+  right: 0;
+  width: 701rem;
+  height: 1162rem;
 }
 
 .b4 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 1212rem;
+  left: 0;
+  width: 753rem;
+  height: 850rem;
 }
 
-.b4 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
-}
 
 .b5 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 1750rem;
+  left: 0rem;
+  width: 100%;
+  height: 1713rem;
 }
 
 .b6 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 2930rem;
+  left: 0rem;
+  width: 506rem;
+  height: 898rem;
 }
 
 .b7 {
-  position: absolute;
-  top: 100rem;
-  left: 10rem;
+  top: 3400rem;
+  right: 0rem;
+  width: 1107rem;
+  height: 1107rem;
 }
 
 .b8 {
+  top: 4132rem;
+  right: 0;
+  width: 618rem;
+  height: 1199rem;
+}
+
+.b9 {
+  top: 5411rem;
+  left: 101rem;
+  width: 1121rem;
+  height: 1121rem;
+}
+
+
+.items {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
   position: absolute;
-  top: 100rem;
-  left: 10rem;
+}
+
+.items > div {
+  position: absolute;
+}
+
+.i1 {
+  top: 651rem;
+  right: 183rem;
+  width: 238rem;
+  height: 170rem;
+}
+
+.i2 {
+  top: 822rem;
+  left: 40rem;
+  width: 143rem;
+  height: 185rem;
+}
+
+.i3 {
+  top: 1037rem;
+  right: 0;
+  width: 545rem;
+  height: 718rem;
+}
+
+.i4 {
+  top: 1855rem;
+  left: 0;
+  width: 193rem;
+  height: 113rem;
+}
+
+.i5 {
+  top: 3227rem;
+  left: 0;
+  width: 196rem;
+  height: 164rem;
+}
+
+.i6 {
+  top: 3267rem;
+  right: 100rem;
+  width: 273rem;
+  height: 119rem;
+}
+
+.i7 {
+  top: 4360rem;
+  right: 367rem;
+  width: 286rem;
+  height: 289rem;
+}
+
+.i8 {
+  top: 5328rem;
+  right: 74rem;
+  width: 302rem;
+  height: 298rem;
+}
+
+.i9 {
+  top: 6253rem;
+  left: 0;
+  width: 227rem;
+  height: 166rem;
+}
+
+.i10 {
+  top: 6235rem;
+  right: 0;
+  width: 135rem;
+  height: 193rem;
 }

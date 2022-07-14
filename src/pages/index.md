@@ -119,13 +119,37 @@ partersMarquee:
   title: 'Партнёры и рекламодатели'
   partners: 
     - partnerLogo: ../images/partners-logo/logo-1.png
+      dimensionsStyle: 
+        width: '84em'
+        height: '84em'
     - partnerLogo: ../images/partners-logo/logo-2.png
+      dimensionsStyle: 
+        width: '65em'
+        height: '64em'
     - partnerLogo: ../images/partners-logo/logo-3.png
+      dimensionsStyle: 
+        width: '230em'
+        height: '65em'
     - partnerLogo: ../images/partners-logo/logo-4.png
+      dimensionsStyle: 
+        width: '196em'
+        height: '34em'
     - partnerLogo: ../images/partners-logo/logo-5.png
+      dimensionsStyle: 
+        width: '155em'
+        height: '41em'
     - partnerLogo: ../images/partners-logo/logo-6.png
+      dimensionsStyle: 
+        width: '115em'
+        height: '49em'
     - partnerLogo: ../images/partners-logo/logo-7.png
+      dimensionsStyle: 
+        width: '77em'
+        height: '76em'
     - partnerLogo: ../images/partners-logo/logo-8.png
+      dimensionsStyle: 
+        width: '225em'
+        height: '64em'
 participate:
   clockImage: ../images/participate/clock.png
   bgBubble: ../images/bg-elements/b-participate.png
@@ -144,4 +168,16 @@ bgElements:
     - bubble: ../images/bg-elements/b-7.png
     - bubble: ../images/bg-elements/b-8.png
     - bubble: ../images/bg-elements/b-9.png
+  items:
+    - item: ../images/bg-elements/i-1.png
+    - item: ../images/bg-elements/i-2.png
+    - item: ../images/bg-elements/i-3.png
+    - item: ../images/bg-elements/i-4.png
+    - item: ../images/bg-elements/i-5.png
+    - item: ../images/bg-elements/i-6.png
+    - item: ../images/bg-elements/i-7.png
+    - item: ../images/bg-elements/i-8.png
+    - item: ../images/bg-elements/i-9.png
+    - item: ../images/bg-elements/i-10.png
+
 ---
