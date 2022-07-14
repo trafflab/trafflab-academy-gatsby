@@ -6,4 +6,5 @@
   position: relative;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
+  font-family: var(--f-basic);
 }

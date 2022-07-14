@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 40rem;
+  max-height: 40rem;
+  border-radius: 50%;
+  background-color: var(--c-dark-2);
+  padding: 8rem;
+  box-sizing: border-box;
+  width: max-content;
+  height: max-content;
+}

@@ -1,0 +1,58 @@
+.participate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--c-black);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 1200rem;
+  border-radius: 40rem;
+  position: relative;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--f-basic);
+  margin: 74rem 0 0 59rem;
+}
+
+.title {
+  font-size: var(--fz-h-medium);
+  font-weight: 700;
+  line-height: 46rem;
+  color: var(--c-white);
+  margin-bottom: 16rem;
+}
+
+.text {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-gray-1);
+  margin-bottom: 32rem;
+}
+
+.buttonContainer {
+  width: 235rem;
+}
+
+.imageContainer {
+  width: 550rem;
+  height: 100%;
+  z-index: 1;
+}
+
+.bgBubble {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  
+}

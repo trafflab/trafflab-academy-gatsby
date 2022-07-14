@@ -30,25 +30,118 @@ whatIsIt:
         - text: 'Чтобы заниматься арбитражем, нужно разбираться в источниках трафика, продуктах и рекламе '
         - text: 'Арбитражник не зависит от заказчика и имеет полную свободу действий'
         - text: 'Средний заработок начинающего арбитражника – $1500-2000 в месяц'
-ItIsForYou:
+itIsForYou:
   buttonText: 'Участвовать бесплатно'
   title: 
     - part: 'Этот вебинар для вас,'
     - part: 'если вы:'
   cards:
       - cardImage: ../images/it-is-for-you/1.png
-        imageAlt: ''
+        imageAlt: 'актуальные знания и навыки, которые позволят зарабатывать от 3 000$ из любой точки мира'
         text: 'Хотите получить актуальные знания и навыки, которые позволят зарабатывать от 3 000$ из любой точки мира '
       - cardImage: ../images/it-is-for-you/2.png
-        imageAlt: ''
-        text: 'Хотите разобраться в развивающемся направлении, которое позволяет сотням  и тысячам людей успешно зарабатывать'
+        imageAlt: 'позволяет сотням и тысячам людей успешно зарабатывать'
+        text: 'Хотите разобраться в развивающемся направлении, которое позволяет сотням и тысячам людей успешно зарабатывать'
       - cardImage: ../images/it-is-for-you/3.png
-        imageAlt: ''
-        text: 'Недовольны своим финансовым положением, хотите начать зарабатывать  в валюте и не зависеть от геополитики'
+        imageAlt: 'зарабатывать в валюте и не зависеть от геополитики'
+        text: 'Недовольны своим финансовым положением, хотите начать зарабатывать в валюте и не зависеть от геополитики'
       - cardImage: ../images/it-is-for-you/4.png
-        imageAlt: ''
+        imageAlt: 'сильное и успешное сообщество единомышленников'
         text: 'Вам интересно попасть в сильное и успешное сообщество единомышленников '
       - cardImage: ../images/it-is-for-you/5.png
-        imageAlt: ''
+        imageAlt: 'развитии своего онлайн-бизнеса'
         text: 'Заинтересованы в карьерном росте, управлении своей командой людей и развитии своего онлайн-бизнеса'
+importantThings:
+  title: 
+    - part: '8 важных вещей,'
+    - part: 'о которых ты узнаешь'
+  cards:
+      - cardImage: ../images/important-things/1.png
+        imageAlt: 'арбитраж трафика'
+        text: 'Что такое арбитраж трафика и почему он так востребован у заказчиков'
+      - cardImage: ../images/important-things/2.png
+        imageAlt: 'сфере денег'
+        text: 'Сколько в этой сфере денег и почему их так много'
+      - cardImage: ../images/important-things/3.png
+        imageAlt: 'стабильный доход от 1500$'
+        text: 'Как за 2 месяца выйти на стабильный доход от 1500$ и выше и работать в удовольствие '
+      - cardImage: ../images/important-things/4.png
+        imageAlt: 'заработка без опыта в арбитраже'
+        text: 'Пошаговая инструкция первого заработка без опыта в арбитраже'
+      - cardImage: ../images/important-things/5.png
+        imageAlt: 'арбитраж самый перспективный выбор'
+        text: 'Почему арбитраж самый перспективный выбор (для успешного роста в профессии и вашего заработка)'
+      - cardImage: ../images/important-things/6.png
+        imageAlt: '6 шагов успешного запуска трафика'
+        text: '6 шагов успешного запуска трафика (на иностранную аудиторию) '
+      - cardImage: ../images/important-things/7.png
+        imageAlt: 'быстро расти в арбитраже и зарабатывать '
+        text: 'Все, что нужно знать, чтобы быстро расти в арбитраже и зарабатывать '
+      - cardImage: ../images/important-things/8.png
+        imageAlt: 'Средний доход новичков и кейсы наших арбитражников'
+        text: 'Средний доход новичков и кейсы наших арбитражников'
+perfectChoice:
+  title: 
+    - part: 'Арбитраж трафика – '
+    - part: 'идеальный выбор,'
+    - part: 'если вы:'
+  cards:
+    - cardImage: ../images/perfect-choice/1.jpg
+      imageAlt: 'Фрилансер'
+      title: 'Фрилансер'
+      list: 
+        - elementText: 'знаете, как круто работать на себя и не зависеть от начальника'
+        - elementText: 'не хватает времени на работу и вы устали прыгать от проекта к проекту '
+        - elementText: 'уперлись в финансовый потолок и хочется работать в удовольствие'
+        - elementText: 'устали постоянно искать заказчиков и переживать о заработке через месяц или полгода'
+    - cardImage: ../images/perfect-choice/2.jpg
+      imageAlt: 'Наемный сотрудник'
+      title: 'Наемный сотрудник'
+      list: 
+        - elementText: 'хотите начать работать удаленно и не знаете как'
+        - elementText: 'боитесь, что удаленные профессии недостаточно стабильные - особенно в кризис'
+        - elementText: 'хотите научиться тому, что позволит зарабатывать тысячи долларов в валюте и не бояться изменения курса'
+    - cardImage: ../images/perfect-choice/3.jpg
+      imageAlt: 'Наемный сотрудник'
+      title: 'Наемный сотрудник'
+      list: 
+        - elementText: 'умеете работать с трафиком, но устали возиться с заказчиками'
+        - elementText: 'надоела постоянная текучка заказчиков  и хотите работать на себя'
+        - elementText: 'не хотите зависеть от заказчиков  из СНГ и получать зарплату в рублях'
+aboutUs:
+  title: 
+    - part: 'Кто приглашает тебя'
+    - part: 'на вебинар?'
+  name: 'Тамерлан Сафиуллин'
+  masterOf: 'Эксперт в арбитраже трафика'
+  image: ../images/about-us/tamerlan.png
+partersMarquee:
+  title: 'Партнёры и рекламодатели'
+  partners: 
+    - partnerLogo: ../images/partners-logo/logo-1.png
+    - partnerLogo: ../images/partners-logo/logo-2.png
+    - partnerLogo: ../images/partners-logo/logo-3.png
+    - partnerLogo: ../images/partners-logo/logo-4.png
+    - partnerLogo: ../images/partners-logo/logo-5.png
+    - partnerLogo: ../images/partners-logo/logo-6.png
+    - partnerLogo: ../images/partners-logo/logo-7.png
+    - partnerLogo: ../images/partners-logo/logo-8.png
+participate:
+  clockImage: ../images/participate/clock.png
+  bgBubble: ../images/bg-elements/b-participate.png
+  title:  Живая встреча
+  subtitle: Не автовебинар!
+  text: На встрече вы сможете задать все интересующие вопросы Тамерлану и арбитражникам из его команды
+  buttonText: Принять участие
+bgElements:
+  bubbles:
+    - bubble: ../images/bg-elements/b-1.png
+    - bubble: ../images/bg-elements/b-2.png
+    - bubble: ../images/bg-elements/b-3.png
+    - bubble: ../images/bg-elements/b-4.png
+    - bubble: ../images/bg-elements/b-5.png
+    - bubble: ../images/bg-elements/b-6.png
+    - bubble: ../images/bg-elements/b-7.png
+    - bubble: ../images/bg-elements/b-8.png
+    - bubble: ../images/bg-elements/b-9.png
 ---

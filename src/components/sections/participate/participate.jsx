@@ -1,0 +1,49 @@
+import * as React from "react"
+import * as styles from './participate.module.css';
+import { Is480Context, FormContext } from "../../../utils/contexts";
+import { MediaGatsbyImage, BasicButton } from "../../ui";
+import { useStaticQuery, graphql } from "gatsby";
+
+export default function Participate() {
+  const openFormPopup = React.useContext(FormContext)
+  const data = useStaticQuery(graphql`
+  query participateQuery {
+    markdownRemark {
+      frontmatter {
+        participate {
+          title
+          subtitle
+          buttonText
+          text
+          bgBubble {
+            childImageSharp {
+              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+            }
+          }
+          clockImage {
+            childImageSharp {
+              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+            }
+          }
+        }
+      }
+    }
+  }
+`).markdownRemark.frontmatter.participate
+  return (
+    <section className={styles.participate}>
+      <div className={styles.content}>
+        <div className={styles.textContainer}>
+          <h2 className={styles.title}>{data.title}</h2>
+          <p className={styles.text}>{data.text}</p>
+          <div className={styles.buttonContainer}><BasicButton text={data.buttonText} handler={openFormPopup} /></div>
+        </div>
+        <div className={styles.imageContainer}>
+          <MediaGatsbyImage image={data.clockImage} image_480={data.clockImage} />
+        </div>
+        <div className={styles.bgBubble}><MediaGatsbyImage image={data.bgBubble} image_480={data.bgBubble} /></div>
+      </div>
+
+    </section>
+  )
+}

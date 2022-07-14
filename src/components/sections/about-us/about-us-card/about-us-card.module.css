@@ -1,0 +1,5 @@
+.card {
+  display: grid;
+  gap: 16rem;
+  grid-auto-flow: column;
+}

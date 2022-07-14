@@ -11,10 +11,11 @@
 .content {
   width: 1200rem;
   display: grid;
-  grid-template-columns: max-content 678rem max-content;
+  grid-template-columns: max-content 556rem;
   justify-items: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 105rem;
 }
 
 .navContainer {
@@ -22,11 +23,12 @@
 }
 
 .burgerContainer {
+  display: none;
   
 }
 
 .burgerButton {
-  display: none;
+  
 }
 
 

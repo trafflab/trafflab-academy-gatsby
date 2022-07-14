@@ -2,7 +2,7 @@ import * as React from "react";
 import '@splidejs/react-splide/css/core';
 import * as styles from './index-page-layout.module.css';
 
-import BackgroundItems from "./background-items/background-items";
+import BgElements from "./bg-elements/bg-elements";
 import { Header, Footer  } from "../../sections";
 import SuccessMessage from '../../common/success-message/success-message';
 import { MessagesContext } from '../../../utils/contexts';
@@ -21,7 +21,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   return (
     <>
       <MessagesContext.Provider value={showSuccessMessage}>
-        <BackgroundItems />
+        <BgElements />
         <div className={styles.content}>
           <Header openNavPopupHandler={() => setIsNavPopupOpen(true)}/>
           <main className={styles.main}>

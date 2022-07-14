@@ -29,10 +29,10 @@ html {
   --fz-h-medium: 36rem;
   --fz-h-small: 24rem; ;
   --fz-c-big: 22rem;
-  --fz-c-middle: 20rem;
+  --fz-c-medium: 20rem;
   --fz-c-small: 18rem;
   --fz-b-big: 16rem;
-  --fz-b-middle: 14rem;
+  --fz-b-medium: 14rem;
   --fz-b-small: 12rem;
 
   --tr-link-opacity: linear 0.35s opacity;

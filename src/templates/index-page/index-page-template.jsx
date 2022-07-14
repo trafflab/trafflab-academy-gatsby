@@ -2,12 +2,14 @@ import * as React from "react";
 import { PageLayout, IndexPageLayout } from "../../components/layouts/";
 import { FormPopup } from "../../components/popups";
 import {
-  TrafficSources,
   PartnersMarquee,
   WhatIsIt,
-  PageForm,
+  Participate,
   Opening,
-  ItIsForYou
+  ItIsForYou,
+  ImportantThings,
+  PerfectCooice,
+  AboutUs
 } from '../../components/sections';
 import { FormContext } from "../../utils/contexts";
 
@@ -25,14 +27,11 @@ export default function IndexPage() {
           <Opening />
           <WhatIsIt />
           <ItIsForYou />
-          {/* <TrafficSources />
-          <WhatWeDo openFormPopupHandler={openFormPopup}/>
-          <Ecosystem />
-          <Blog openArticlePopupHandler={openArticlePopup}/>
+          <ImportantThings />
+          <PerfectCooice />
+          <AboutUs />
           <PartnersMarquee />
-          <Vacancies />
-          <PageForm /> */}
-          {/* <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/> */}
+          <Participate />
         </FormContext.Provider>
       </IndexPageLayout>
     </PageLayout>

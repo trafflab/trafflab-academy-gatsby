@@ -9,10 +9,10 @@ export default function ItIsForYou() {
   const is480 = React.useContext(Is480Context);
   const openFormPopup = React.useContext(FormContext);
   const data = useStaticQuery(graphql`
-    query ItIsForYouQuery {
+    query itIsForYouQuery {
       markdownRemark {
         frontmatter {
-          ItIsForYou {
+          itIsForYou {
             buttonText
             cards {
               cardImage {
@@ -30,7 +30,7 @@ export default function ItIsForYou() {
         }
       }
     }
-  `).markdownRemark.frontmatter.ItIsForYou
+  `).markdownRemark.frontmatter.itIsForYou
   
   return (
     <section id='itIsForYou' className={styles.itIsForYou}>

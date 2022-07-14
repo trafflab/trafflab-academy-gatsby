@@ -2,9 +2,10 @@ import * as React from "react"
 import * as styles from './opening.module.css';
 import { Is480Context, FormContext } from "../../../utils/contexts";
 import { useStaticQuery, graphql } from "gatsby";
-import { BasicButton, MediaGatsbyImage, Icon } from '../../ui/'
-import giftIcon from '../../../images/icons/gift.svg'
+import { BasicButton, MediaGatsbyImage } from '../../ui/'
 import OpeningCardList from './opening-card-list/opening-card-list';
+import { GiftIcon } from "../../ui/icons";
+import curveArrow from '../../../images/misc/curve-arrow.svg';
 
 export default function Opening() {
   const is480 = React.useContext(Is480Context);
@@ -55,10 +56,11 @@ export default function Opening() {
           <h1 className={styles.title}>{data.title[0].part}<br/>{data.title[1].part}<br/>{data.title[2].part}</h1>
           <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}>
+            <img src={curveArrow} className={styles.curveArrow} />
             <BasicButton handler={openFormPopup} text={is480 ? data.buttonText_480 : data.buttonText}/>
           </div>
           <div className={styles.gift}>
-            <Icon icon={giftIcon} />
+            <GiftIcon />
             <p className={styles.giftText}>{data.giftText}</p>
           </div>
         </div>

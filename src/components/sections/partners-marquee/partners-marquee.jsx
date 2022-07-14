@@ -1,13 +1,29 @@
 import * as React from "react"
 import * as styles from './partners-marquee.module.css';
 import Marquee from "react-fast-marquee";
-import MediaImage from "../../ui/media-image/media-image";
-import { partnersData } from "../../../misc/common-data";
-import { LangContext } from "../../../utils/contexts";
+import { MediaGatsbyImage } from "../../ui";
+import { useStaticQuery, graphql } from "gatsby";
 
 export default function PartnersMarquee() {
-  const data = React.useContext(LangContext).partnersMarqueeSection;
-
+  const data = useStaticQuery(graphql`
+    query partersMarqueeQuery {
+      markdownRemark {
+        frontmatter {
+          partersMarquee {
+            title
+            partners {
+              partnerLogo {
+                childImageSharp {
+                  gatsbyImageData(quality: 95, layout: CONSTRAINED )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `).markdownRemark.frontmatter.partersMarquee
+  
   return (
     <section id='partners' className={styles.partenrsMarquee}>
       <div className={styles.content}>
@@ -16,10 +32,10 @@ export default function PartnersMarquee() {
         <Marquee gradient={false} direction="right">
           <ul className={styles.list}>
             {
-              partnersData.map((partnerData, index) => (
+              data.partners.map((partnerData, index) => (
                 <li key={index} className={styles.listElement}>
                   <div style={partnerData.dimensionsStyle}>
-                    <MediaImage image_webp={partnerData.logo_webp} image={partnerData.logo} />
+                    <MediaGatsbyImage image={partnerData.partnerLogo} image_480={partnerData.partnerLogo} />
                   </div>
                 </li>
               ))

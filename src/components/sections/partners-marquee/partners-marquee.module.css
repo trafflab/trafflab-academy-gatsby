@@ -1,6 +1,6 @@
 .partenrsMarquee {
   width: 100%;
-  height: max-content;
+  height: 100%;
   overflow: hidden;
   padding-bottom: 135rem;
   position: relative;
@@ -20,7 +20,7 @@
   width: 1200rem;
   display: block;
   font-family: var(--f-basic);
-  font-size: var(--fz-middle);
+  font-size: var(--fz-h-small);
   color: var(--c-white);
   font-weight: 700;
   margin-bottom: 32rem;

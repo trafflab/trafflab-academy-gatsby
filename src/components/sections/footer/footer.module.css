@@ -21,9 +21,36 @@
   margin-top: -7rem;
 }
 
+.requisitesList {
+  margin-top: 25rem;
+  display: grid;
+  gap: 15rem;
+  color: var(--c-gray-2);
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  
+}
+
 .navContainer {
   grid-area: nav;
   width: 522rem;
+}
+
+.docs {
+  display: grid;
+  gap: 15rem;
+  margin-top: 20rem;
+  justify-items: center;
+  margin-bottom: 32rem;
+}
+
+.docs > a {
+  color: var(--c-white);
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  text-decoration: none;
 }
 
 .year {
@@ -45,21 +72,20 @@
 }
 
 .listEement {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10rem;
   align-items: center;
   font-size: var(--fz-b-big);
   font-family: var(--f-basic);
 }
 
 .mailto {
-  
   color: var(--c-white);
   font-weight: 300;
-  margin-left: 10rem;
   text-decoration:  none;
   transition: var(--tr-link-opacity);
 }
-
 
 .mailto:hover {
   opacity: 0.8;
@@ -71,8 +97,7 @@
   font-size: var(--fz-body-big);
   color: var(--c-white);
   font-weight: 300;
-  margin-left: 10rem;
-  text-decoration:  none;
+  text-decoration: none;
 }
 
 
