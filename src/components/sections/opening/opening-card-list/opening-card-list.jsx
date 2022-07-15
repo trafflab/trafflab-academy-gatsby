@@ -2,6 +2,7 @@ import * as React from "react"
 import * as styles from './opening-card-list.module.css';
 import OpeningCard from "./opening-card/opening-card";
 import { CoinIcon, GraphIcon, HeartIcon } from "../../../ui/icons";
+
 export default function OpeningCardList({ cards }) {
   return (
     <ul className={styles.list}>

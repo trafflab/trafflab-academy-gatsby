@@ -21,6 +21,11 @@ export default function AboutUs() {
               gatsbyImageData(quality: 95, layout: CONSTRAINED )
             }
           }
+          image_480 {
+            childImageSharp {
+              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+            }
+          }
         }
       }
     }
@@ -31,24 +36,12 @@ export default function AboutUs() {
     <section className={styles.aboutUs}>
       <div className={styles.content}>
         <h2 className={styles.title}><span style={{color: 'var(--c-purple)'}}>{data.title[0].part}</span> {data.title[1].part}</h2>
-        <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image} /></div>
+        <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div>
         <div className={styles.nameContainer}>
           <h3 className={styles.name}>{data.name}</h3>
           <p className={styles.masterOf}>{data.masterOf}</p>
         </div>
         <ul className={styles.list}>
-        <li className={`${styles.element} ${styles.team}`}>
-            <AboutUsCard>
-              <HeartIcon isBig/>
-              <p className={styles.listText}><span style={{fontWeight: "700"}}>60 человек</span><br/>в команде</p>
-            </AboutUsCard>
-          </li>     
-          <li className={`${styles.element} ${styles.lines}`}>
-            <AboutUsCard>
-              <RocketIcon isBig/>
-              <p className={styles.listText}>Ниши: Fin-Tech, Crypto,<br/> Ed-tech, Гэмблинг</p>
-            </AboutUsCard>
-          </li>
           <li className={`${styles.element} ${styles.budget}`}>
             <AboutUsCard>
               <CoinIcon isBig />
@@ -59,6 +52,18 @@ export default function AboutUs() {
             <AboutUsCard>
               <CoinIcon isBig />
               <p className={styles.listText}>Оборот на команду<br/> за 2021:<br/><span style={{fontWeight: "700"}}>15 000 000 $</span></p>
+            </AboutUsCard>
+          </li>
+          <li className={`${styles.element} ${styles.team}`}>
+            <AboutUsCard>
+              <HeartIcon isBig/>
+              <p className={styles.listText}><span style={{fontWeight: "700"}}>60 человек</span><br/>в команде</p>
+            </AboutUsCard>
+          </li>     
+          <li className={`${styles.element} ${styles.lines}`}>
+            <AboutUsCard>
+              <RocketIcon isBig/>
+              <p className={styles.listText}>Ниши: Fin-Tech, Crypto,<br/> Ed-tech, Гэмблинг</p>
             </AboutUsCard>
           </li>
         </ul>

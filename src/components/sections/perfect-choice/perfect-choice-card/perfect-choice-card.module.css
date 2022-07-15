@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .imageContainer {
@@ -17,6 +16,7 @@
   border-radius: 24rem;
   overflow: hidden;
 }
+
 .title {
   font-family: var(--f-basic);
   color: var(--c-white);
@@ -29,7 +29,6 @@
 
 .element {
   margin-bottom: 16rem;
-
 }
 
 .element:last-child {
@@ -63,26 +62,23 @@
 
 
 @media screen and (max-width: 480px) {
-  .card {
-    height: 135rem;
-    align-items: flex-end!important;
-
-  }
-
   .content {
-    width: 130rem;
-    height: 123rem;
-    padding-bottom: 20rem;
+    width: min-content;
   }
-
   .imageContainer {
-    bottom: 44rem;
-    width: 98rem;
-    height: 98rem;
+    width: 204rem;
+    height: 118rem;
+    margin-bottom: 24rem;
   }
 
   .title {
-    font-size: var(--fz-body-small);
-    line-height: 1.3;
+    font-size: var(--fz-b-medium);
+    line-height: 24rem;
   }
+
+  .elementText {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+
 }

@@ -1,0 +1,12 @@
+.button {
+  padding: 8rem;
+  width: max-content;
+  height: max-content;
+  background-color: var(--c-dark-2);
+  border-radius: 50%;
+}
+
+.icon {
+  width: 16rem;
+  height: 16rem;
+}

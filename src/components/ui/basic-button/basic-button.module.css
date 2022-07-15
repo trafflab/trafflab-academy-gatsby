@@ -17,18 +17,18 @@
 }
 
 .button:hover {
-  background-color: var(--c-red-2);
+  background-color: #dbb7ff;
   cursor: pointer;
 }
 
 .button:active {
-  background-color: var(--c-red-3);
+  background-color: #b167fa;
 }
 
 @media screen and (max-width: 480px) {
   .button {
     height: 40rem;
-    font-size: var(--fz-body-middle);
+    font-size: var(--fz-b-medium);
 
   }
 }

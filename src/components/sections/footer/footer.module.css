@@ -29,7 +29,6 @@
   font-size: var(--fz-b-big);
   font-weight: 400;
   line-height: 26rem;
-  
 }
 
 .navContainer {
@@ -120,16 +119,39 @@
     justify-content: center;
   }
 
-
   .logoContainer {
     margin-bottom: 16rem;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .requisitesList {
+    margin-top: 10rem;
+    gap: 12rem;
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+    text-align: center;
   }
 
   .navContainer {
     width: 100%;
     margin-bottom: 8rem;
     overflow: hidden;
+  }
+
+  .docs {
+    gap: 12rem;
+    margin-top: 0;
+    justify-items: center;
+    margin-bottom: 0;
+    display: none;
+  }
+  
+  .docs > a {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
   }
 
   .contactsContainer {
@@ -146,16 +168,16 @@
   }
 
   .contact {
-    font-size: var(--fz-body-middle);
+    font-size: var(--fz-b-medium);
     margin-left: 4rem;
   }
 
   .mailto {
-    font-size: var(--fz-body-middle);
+    font-size: var(--fz-b-medium);
     margin-left: 4rem;
   }
 
   .year {
-    font-size: var(--fz-body-small);
+    font-size: var(--fz-b-small);
   }
 }

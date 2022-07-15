@@ -20,7 +20,17 @@ export default function Participate() {
               gatsbyImageData(quality: 95, layout: CONSTRAINED )
             }
           }
+          bgBubble_480 {
+            childImageSharp {
+              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+            }
+          }
           clockImage {
+            childImageSharp {
+              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+            }
+          }
+          clockImage_480 {
             childImageSharp {
               gatsbyImageData(quality: 95, layout: CONSTRAINED )
             }
@@ -30,18 +40,23 @@ export default function Participate() {
     }
   }
 `).markdownRemark.frontmatter.participate
+
   return (
     <section className={styles.participate}>
       <div className={styles.content}>
         <div className={styles.textContainer}>
-          <h2 className={styles.title}>{data.title}</h2>
+          <h2 className={styles.title}>
+            {data.title}
+            <span className={styles.subtitle}>{data.subtitle}</span>
+          </h2>
+          <p className={styles.subtitle}>{data.subtitle}</p>
           <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}><BasicButton text={data.buttonText} handler={openFormPopup} /></div>
         </div>
         <div className={styles.imageContainer}>
-          <MediaGatsbyImage image={data.clockImage} image_480={data.clockImage} />
+          <MediaGatsbyImage image={data.clockImage} image_480={data.clockImage_480} />
         </div>
-        <div className={styles.bgBubble}><MediaGatsbyImage image={data.bgBubble} image_480={data.bgBubble} /></div>
+        <div className={styles.bgBubble}><MediaGatsbyImage image={data.bgBubble} image_480={data.bgBubble_480} /></div>
       </div>
 
     </section>

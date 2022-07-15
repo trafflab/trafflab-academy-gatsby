@@ -10,7 +10,6 @@
 }
 
 .content {
-  /* width: 1200rem; */
   display: flex;
   flex-direction: column;
   position: relative;
@@ -94,5 +93,85 @@
 
 
 @media screen and (max-width: 480px) {
+  .aboutUs {
+    padding-top: 20rem;
+    padding-bottom: 40rem;
+  }
 
+  .content {
+    align-items: center;
+  }
+
+  .title {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    width: 280rem;
+    margin-left: 0;
+  }
+
+  .imageContainer {
+    width: 100%;
+    min-height: 352rem;
+  }
+  
+  .nameContainer {
+    width: 280rem;
+    margin-top: 0;
+    margin-bottom: 25rem;
+  }
+  
+  .name {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    margin-bottom: 4rem;
+    width: 204rem;
+    text-align: start;
+  }
+  
+  .masterOf {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+    width: 190rem;
+  }
+
+  .list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24rem;
+    column-gap: 20rem;
+  }
+  
+  .element {
+    position: relative;
+    width: 130rem;
+  }
+  
+  .team {
+    top: 0;
+    left: 0;
+    justify-self: end;
+
+  }
+  
+  .lines {
+    top: 0;
+    right: 0;
+  }
+  
+  .budget {
+    top: 0;
+    left: 0;
+    justify-self: end;
+  }
+  
+  .turnover {
+    top: 0;
+    right: 0;
+  }
+
+  .listText {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
 }

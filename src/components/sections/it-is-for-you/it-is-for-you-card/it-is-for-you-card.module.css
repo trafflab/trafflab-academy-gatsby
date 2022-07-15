@@ -20,3 +20,21 @@
   font-family: var(--f-basic);
 }
 
+@media screen and (max-width: 480px) {
+  .card {
+    gap: 0;
+    grid-auto-flow: row;
+    width: 205rem;
+    align-items: start;
+  }
+  
+  .imageContainer {
+    width: 130rem;
+    height: 130rem;;
+  }
+  
+  .text {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+}

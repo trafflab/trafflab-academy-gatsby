@@ -21,7 +21,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
   return (
     <>
       <MessagesContext.Provider value={showSuccessMessage}>
-        <BgElements />
+        {/* <BgElements /> */}
         <div className={styles.content}>
           <Header openNavPopupHandler={() => setIsNavPopupOpen(true)}/>
           <main className={styles.main}>

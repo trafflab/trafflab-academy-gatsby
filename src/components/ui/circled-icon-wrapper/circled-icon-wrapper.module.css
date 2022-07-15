@@ -8,3 +8,20 @@
   width: max-content;
   height: max-content;
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    max-width: 32rem;
+    max-height: 32rem;
+    border-radius: 50%;
+    background-color: var(--c-dark-2);
+    padding: 8rem;
+    box-sizing: border-box;
+    width: max-content;
+    height: max-content;
+  }
+  .wrapper img {
+    width: 16rem!important;
+    height: 16rem!important;
+  }
+}

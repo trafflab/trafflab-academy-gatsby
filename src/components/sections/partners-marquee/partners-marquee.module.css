@@ -41,13 +41,13 @@
 
 @media screen and (max-width: 480px) {
   .partenrsMarquee {
-    padding-bottom: 20rem;
+    padding-bottom: 40rem;
     padding-top: 20rem;
   }
   
   .title {
     width: 280rem;
-    font-size: var(--fz-small);
+    font-size: var(--fz-c-small);
     margin-bottom: 17rem;
   }
   

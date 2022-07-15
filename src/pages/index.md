@@ -2,10 +2,6 @@
 opening:
   tag: 'Бесплатный вебинар'
   time: '12 июля в 20:00 МСК'
-  title: 
-    - part: Как зарабатывать
-    - part: от 3 000 $ на арбитраже
-    - part: трафика
   text: 'текст для офера...'
   buttonText: 'Участвовать бесплатно'
   buttonText_480: 'Присоединиться'
@@ -21,6 +17,7 @@ opening:
         - title: 'Как построить сильную команду'
           text: 'И масштабировать доход до $10 000 в месяц?'
 whatIsIt:
+  image_480: ../images/what-is-it/image_480.png
   text: 'Арбитраж трафика – это заработок на привлечении клиентов в разные сферы бизнеса'
   title: 
     - part: Что такое
@@ -115,6 +112,7 @@ aboutUs:
   name: 'Тамерлан Сафиуллин'
   masterOf: 'Эксперт в арбитраже трафика'
   image: ../images/about-us/tamerlan.png
+  image_480: ../images/about-us/tamerlan_480.png
 partersMarquee:
   title: 'Партнёры и рекламодатели'
   partners: 
@@ -152,8 +150,10 @@ partersMarquee:
         height: '64em'
 participate:
   clockImage: ../images/participate/clock.png
+  clockImage_480: ../images/participate/clock_480.png
   bgBubble: ../images/bg-elements/b-participate.png
-  title:  Живая встреча
+  bgBubble_480: ../images/bg-elements/b-participate_480.png
+  title:  'Живая встреча '
   subtitle: Не автовебинар!
   text: На встрече вы сможете задать все интересующие вопросы Тамерлану и арбитражникам из его команды
   buttonText: Принять участие

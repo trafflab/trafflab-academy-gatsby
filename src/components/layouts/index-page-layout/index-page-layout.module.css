@@ -18,3 +18,9 @@
   align-items: center;
   padding: 30rem 0 160rem;
 }
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 40rem 0 53rem;
+  }
+}

@@ -1,9 +1,9 @@
 import * as React from "react"
 import * as styles from './slider-layout.module.css';
 import { Splide, SplideTrack} from '@splidejs/react-splide';
-import ArrowButtonCover from "../../ui/arrow-button-cover/arrow-button-cover";
+import ArrowButton from "../../ui/arrow-button/arrow-button";
 
-export default function SliderLayout({ children }) {
+export default function SliderLayout({ gap_480="16rem", isArrowTopPos, children }) {
 
   const options = {
     type: 'slide',
@@ -15,7 +15,7 @@ export default function SliderLayout({ children }) {
     trimSpace: false,
     breakpoints: {
       480: {
-        gap: '20rem',
+        gap: gap_480,
       },
     }
   }
@@ -23,9 +23,9 @@ export default function SliderLayout({ children }) {
   return (
     <Splide hasTrack={ false } options={options}>
 
-      <div className={`splide__arrows ${styles.arrowContainer}`}>
+      <div className={`splide__arrows ${styles.arrowContainer} ${isArrowTopPos ? styles.isArrowTopPos : ''}`}>
         <button className={`splide__arrow splide__arrow--prev ${styles.prevArrow}`}>
-          <ArrowButtonCover direction='left' isSecondary={true} />
+          <ArrowButton isLeft />
         </button> 
 
         <SplideTrack>
@@ -33,7 +33,7 @@ export default function SliderLayout({ children }) {
         </SplideTrack>
 
         <button className={`splide__arrow splide__arrow--next ${styles.nextArrow}`}>
-          <ArrowButtonCover direction='right' isSecondary={true} />
+          <ArrowButton />
         </button>
 
       </div>

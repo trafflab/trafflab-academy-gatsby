@@ -50,5 +50,32 @@
 
 
 @media screen and (max-width: 480px) {
+  .imageContainer {
+    width: 100%;
+    height: 360rem;
+    margin-bottom: 16rem;
+  }
 
+  .whatIsIt {
+    padding-bottom: 40rem;
+  }
+
+  .content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .title {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    margin-bottom: 11rem;
+    width: 280rem;
+  }
+  
+  .text {
+    font-size: var(--fz-b-medium);
+    line-height: 22rem;
+    margin-bottom: 24rem;
+    width: 280rem;
+  }
 }

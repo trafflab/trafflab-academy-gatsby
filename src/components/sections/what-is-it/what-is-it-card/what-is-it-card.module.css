@@ -16,3 +16,18 @@
   color: var(--c-gray-1);
   font-family: var(--f-basic);
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 16rem;
+    gap: 11rem;
+    width: 205rem;
+    height: 200rem;
+  }
+  
+  .text {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+  
+}

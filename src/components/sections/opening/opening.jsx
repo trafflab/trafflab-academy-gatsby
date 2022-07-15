@@ -25,9 +25,6 @@ export default function Opening() {
             tag
             text
             imageAlt
-            title {
-              part
-            }
             personImage {
               childImageSharp {
                 gatsbyImageData(quality: 95, layout: CONSTRAINED )
@@ -53,7 +50,9 @@ export default function Opening() {
             <div className={styles.tag}>{data.tag}</div>
             <p className={styles.time}>{data.time}</p>
           </div>
-          <h1 className={styles.title}>{data.title[0].part}<br/>{data.title[1].part}<br/>{data.title[2].part}</h1>
+
+          <h1 className={styles.title}>Как зарабатывать<br/>от 30 000 $ на арбитраже трафика</h1>
+
           <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}>
             <img src={curveArrow} className={styles.curveArrow} />

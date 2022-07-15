@@ -37,18 +37,20 @@
 }
 
 @media screen and (max-width: 480px) {
-  .trafficSources {
-    width: 100%;
-    padding-bottom: 110rem;
+  .importantThings {
+    padding-bottom: 40rem;
     padding-top: 20rem;
   }
 
-  .list {
-    padding-top: 0;
-    display: grid;
-    column-gap: 20rem;
-    row-gap: 24rem;
-    grid-template-columns: 1fr 1fr;
+  .content {
+    width: 100%;
+    align-items: center;
+  }
+  .title {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    margin-bottom: 24rem;
+    width: 280rem;
   }
 }
 
