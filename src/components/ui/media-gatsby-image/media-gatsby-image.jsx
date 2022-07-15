@@ -14,6 +14,7 @@ export default function MediaGatsbyImage({ image, image_480, alt }) {
     <GatsbyImage
       image={(image && image_480 ) ? images : (getImage(image) || getImage(image_480))}
       objectFit="fill"
+      loading="eager"
       objectPosition={'center'}
       style={{width: "100%", height:"100%"}}
       alt={alt}
