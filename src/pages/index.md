@@ -103,8 +103,8 @@ perfectChoice:
       title: 'Наемный сотрудник'
       list: 
         - elementText: 'умеете работать с трафиком, но устали возиться с заказчиками'
-        - elementText: 'надоела постоянная текучка заказчиков  и хотите работать на себя'
-        - elementText: 'не хотите зависеть от заказчиков  из СНГ и получать зарплату в рублях'
+        - elementText: 'надоела постоянная текучка заказчиков и хотите работать на себя'
+        - elementText: 'не хотите зависеть от заказчиков из СНГ и получать зарплату в рублях'
 aboutUs:
   title: 
     - part: 'Кто приглашает тебя'
@@ -168,6 +168,12 @@ bgElements:
     - bubble: ../images/bg-elements/b-7.png
     - bubble: ../images/bg-elements/b-8.png
     - bubble: ../images/bg-elements/b-9.png
+  bubbles_480:
+    - bubble: ../images/bg-elements/b-1_480.png
+    - bubble: ../images/bg-elements/b-2_480.png
+    - bubble: ../images/bg-elements/b-3_480.png
+    - bubble: ../images/bg-elements/b-4_480.png
+    - bubble: ../images/bg-elements/b-5_480.png
   items:
     - item: ../images/bg-elements/i-1.png
     - item: ../images/bg-elements/i-2.png
@@ -179,5 +185,10 @@ bgElements:
     - item: ../images/bg-elements/i-8.png
     - item: ../images/bg-elements/i-9.png
     - item: ../images/bg-elements/i-10.png
+formPopup:
+  title: Хотите узнать больше про курс?
+  subtitle: Получите подробную программу обучения
+  bookImage: ../images/form-popup/book.png
+  bookImage_480: ../images/form-popup/book_480.png
 
 ---

@@ -46,10 +46,9 @@ export default function Participate() {
       <div className={styles.content}>
         <div className={styles.textContainer}>
           <h2 className={styles.title}>
-            {data.title}
+            {data.title}<br/>
             <span className={styles.subtitle}>{data.subtitle}</span>
           </h2>
-          <p className={styles.subtitle}>{data.subtitle}</p>
           <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}><BasicButton text={data.buttonText} handler={openFormPopup} /></div>
         </div>

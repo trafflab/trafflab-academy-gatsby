@@ -4,34 +4,32 @@ import * as styles from './index-page-layout.module.css';
 
 import BgElements from "./bg-elements/bg-elements";
 import { Header, Footer  } from "../../sections";
-import SuccessMessage from '../../common/success-message/success-message';
-import { MessagesContext } from '../../../utils/contexts';
 import { NavPopup } from '../../popups/'
+import { FormPopup } from "../../popups/";
+import { FormContext } from "../../../utils/contexts";
 
-export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
+export default function IndexPageLayout({ children }) {
   
-  const [ isSuccessMessage, setIsSuccessMessage ] = React.useState(false);
-  const [ isNavPopupOpen, setIsNavPopupOpen ] = React.useState(false);
-  
-  const showSuccessMessage = () => {
-    setIsSuccessMessage(true)
-    setTimeout(() => setIsSuccessMessage(false), 2000)
-  } 
-  
+  const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
+  const openFormPopup = () =>  setFormPopupOpen(true);
+  const closeFormPopup = () => setFormPopupOpen(false);
+
+  const [ isNavPopupOpen, setNavPopupOpen ] = React.useState(false);
+  const openNavPopup = () =>  setNavPopupOpen(true);
+  const closeNavPopup = () => setNavPopupOpen(false);
+
   return (
-    <>
-      <MessagesContext.Provider value={showSuccessMessage}>
-        {/* <BgElements /> */}
-        <div className={styles.content}>
-          <Header openNavPopupHandler={() => setIsNavPopupOpen(true)}/>
-          <main className={styles.main}>
-            { children }
-          </main>
-          <Footer />
-        </div>
-        <SuccessMessage isShown={isSuccessMessage} />
-        <NavPopup isOpen={isNavPopupOpen} closeHandler={() => setIsNavPopupOpen(false)}/>
-      </MessagesContext.Provider>
-    </>
+    <FormContext.Provider value={openFormPopup}>
+      <BgElements />
+      <div className={styles.content}>
+        <Header openNavPopupHandler={openNavPopup}/>
+        <main className={styles.main}>
+          { children }
+        </main>
+        <Footer />
+      </div>
+      <NavPopup isOpen={isNavPopupOpen} closeHandler={closeNavPopup}/>
+      <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup} />
+    </FormContext.Provider>
   )
 }

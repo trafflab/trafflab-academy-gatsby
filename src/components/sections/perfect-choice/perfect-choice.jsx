@@ -37,7 +37,7 @@ export default function PerfectChoice() {
   `).markdownRemark.frontmatter.perfectChoice
 
   return (
-    <section id='sources' className={styles.perfectChoice}>
+    <section id='perfectChoice' className={styles.perfectChoice}>
       <div className={styles.content}>
         <h2 className={styles.title}>{data.title[0].part} <span style={{color: 'var(--c-purple)'}}>{data.title[1].part}</span> {data.title[2].part}</h2>
 
@@ -46,7 +46,7 @@ export default function PerfectChoice() {
             ? <SliderLayout>
                 {
                   data.cards.map((cardData, index) => (
-                    <SplideSlide><PerfectChoiceCard data={cardData} /></SplideSlide>
+                    <SplideSlide key={index}><PerfectChoiceCard data={cardData} /></SplideSlide>
                   ))
                 }
               </SliderLayout>

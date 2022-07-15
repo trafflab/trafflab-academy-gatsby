@@ -1,12 +1,15 @@
 .formPopup {
-  width: 664rem;
+  width: 834rem;
   background-color: var(--c-dark-2);
   position: relative;
   margin-top: 87rem;
   border-radius: 20rem;
   overflow: hidden;
-  padding: 74rem 86rem 64rem;
+  padding: 62rem;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 62rem;
 }
 
 .closeButton {
@@ -29,56 +32,78 @@
   opacity: 0.8;
 }
 
+.gift {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 38rem 0 24rem 24rem;
+  box-sizing: border-box;
+  border-radius: 8rem;
+  background: rgb(54,49,49);
+  background: linear-gradient(0deg, rgba(54,49,49,1) 33%, rgba(41,37,37,1) 33%);;
+}
+
+.giftText {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-white);
+}
+
 .imageContainer {
-  width: 493rem;
-  height: 200rem;
-  margin-bottom: 23rem;
-  border-radius: 20rem;
+  width: 251rem;
+  height: 321rem;
+  margin-bottom: 21rem;
   overflow: hidden;
+  align-self: flex-end;
+  margin-left: 49rem;
+}
+
+.giftText {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-white)
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 324rem;
+  justify-content: space-between;
+}
+
+.textContainer {
+  margin-bottom: 20rem;
 }
 
 .title {
   margin-bottom: 8rem;
   font-family: var(--f-basic);
-  font-size: var(--fz-middle);
+  font-size: var(--fz-c-big);
   color: var(--c-white);
-  line-height: 1.4;
+  line-height: 34rem;
   font-weight: 700;
 }
 
 .subtitle {
-  margin-bottom: 20rem;
   font-family: var(--f-basic);
-  font-size: var(--fz-body-big);
+  font-size: var(--fz-b-big);
   color: var(--c-gray-2);
-  line-height: 1.6;
-}
-
-.form {
-  
+  line-height: 26rem;
 }
 
 .inputsContainer {
-  margin-bottom: 20rem;
   display: grid;
-  grid-auto-flow: column;
-  gap: 24rem;
-  grid-template-columns: 1fr 1fr;
+  gap: 16rem;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
 .buttonContainer {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 24rem;
-  grid-template-columns: 174rem 280rem;
-  align-items: center;
-}
-
-.agreement {
-  font-family: var(--f-basic);
-  font-size: var(--fz-body-small);
-  color: var(--c-gray-1);
+  width: 174rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -86,9 +111,12 @@
     width: 280rem;
     margin-top: 25rem;
     padding: 50rem 20rem 32rem;
+    grid-template-columns: 1fr;
+    gap: 16rem;
   }
 
   .closeButton {
+    position: absolute;
     top: 13rem;
     right: 8rem;
     background-size: 24rem 24rem;
@@ -96,37 +124,50 @@
     height: 24rem;
   }
 
+  .gift {
+    /* width: 260rem; */
+    padding: 19rem 0 21rem 20rem;
+    background: linear-gradient(0deg, rgba(54,49,49,1) 40%, rgba(41,37,37,1) 40%);;
+  }
+
+  .giftText {
+    font-size: var(--fz-b-big);
+    font-weight: 400;
+    line-height: 26rem;
+    color: var(--c-white);
+    width: 200rem;
+  }
+  
   .imageContainer {
+    width: 188rem;
+    height: 202rem;
+    margin-bottom: 7rem;
+    margin-left: 32rem;
+  }
+
+  .form {
     width: 100%;
-    height: 155rem;
+  }
+
+  .textContainer {
     margin-bottom: 16rem;
   }
 
   .title {
-    font-size: var(--fz-small);
+    font-size: var(--fz-c-small);
+    line-height: 26rem;
   }
-
+  
   .subtitle {
-    margin-bottom: 16rem;
-    font-size: var(--fz-body-middle);
+    font-size: var(--fz-b-medium);
+    line-height: 22rem;
   }
 
   .inputsContainer {
     margin-bottom: 16rem;
-    display: grid;
-    grid-auto-flow: row;
-    gap: 16rem;
-    grid-template-columns: 1fr;
-
   }
 
   .buttonContainer {
-    grid-auto-flow: row;
-    gap: 16rem;
-    grid-template-columns: 1fr;
-  }
-  
-  .agreement {
-    text-align: center;
+    width: 100%;
   }
 }

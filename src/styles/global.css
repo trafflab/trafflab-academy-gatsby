@@ -15,6 +15,7 @@ html {
   --c-black: #000;
   --c-dark-1: #131313;
   --c-dark-2: #181818;
+  --c-dark-3: rgba(255, 255, 255, 0.16);
   --c-gray-1: #B4B4B4;
   --c-gray-2:#ADADAD;
   --c-purple: #CC99FF;

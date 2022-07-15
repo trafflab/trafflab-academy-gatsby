@@ -15,7 +15,10 @@
   margin-bottom: 24rem;
   border-radius: 24rem;
   overflow: hidden;
+  z-index: 3;
 }
+
+
 
 .title {
   font-family: var(--f-basic);

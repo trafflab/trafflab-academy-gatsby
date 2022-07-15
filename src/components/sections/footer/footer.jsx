@@ -17,7 +17,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer id='contacts' className={styles.footer}>
+    <footer id='footer' className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.logoContainer}>
           <Link to={'/'}><Logo /></Link>

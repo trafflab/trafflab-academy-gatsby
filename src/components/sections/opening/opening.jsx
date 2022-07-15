@@ -16,6 +16,7 @@ export default function Opening() {
         frontmatter {
           opening {
             buttonText
+            buttonText_480
             time
             cards {
               title

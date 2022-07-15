@@ -60,6 +60,8 @@
   z-index: 0;
   overflow: hidden;
   border-radius: 40rem 40rem 0 0 ;
+  width: 1200rem;
+  height: 361rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -112,6 +114,8 @@
   
   .bgBubble {
     position: absolute;
+    width: 280rem;
+    height: 346rem;
     top: 0;
     z-index: 0;
     overflow: hidden;

@@ -34,12 +34,12 @@ export default function ImportantThings() {
   `).markdownRemark.frontmatter.importantThings
 
   return (
-    <section id='sources' className={styles.importantThings}>
+    <section id='imortantThings' className={styles.importantThings}>
       <div className={styles.content}>
         <h2 className={styles.title}><span style={{color: 'var(--c-purple)'}}>{data.title[0].part}</span><br/>{data.title[1].part}</h2>
         {
           is480
-            ? <SliderLayout isArrowTopPos>
+            ? <SliderLayout>
                 {
                   data.cards.map((cardData, index) => (
                     <SplideSlide key={index}><TrafficSourcesCard data={cardData}/></SplideSlide>

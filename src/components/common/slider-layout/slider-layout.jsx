@@ -3,7 +3,7 @@ import * as styles from './slider-layout.module.css';
 import { Splide, SplideTrack} from '@splidejs/react-splide';
 import ArrowButton from "../../ui/arrow-button/arrow-button";
 
-export default function SliderLayout({ gap_480="16rem", isArrowTopPos, children }) {
+export default function SliderLayout({ gap_480="16rem", children }) {
 
   const options = {
     type: 'slide',
@@ -23,7 +23,7 @@ export default function SliderLayout({ gap_480="16rem", isArrowTopPos, children 
   return (
     <Splide hasTrack={ false } options={options}>
 
-      <div className={`splide__arrows ${styles.arrowContainer} ${isArrowTopPos ? styles.isArrowTopPos : ''}`}>
+      <div className={`splide__arrows ${styles.arrowContainer}`}>
         <button className={`splide__arrow splide__arrow--prev ${styles.prevArrow}`}>
           <ArrowButton isLeft />
         </button> 

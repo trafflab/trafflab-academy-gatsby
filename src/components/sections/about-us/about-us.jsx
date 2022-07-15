@@ -33,7 +33,7 @@ export default function AboutUs() {
 `).markdownRemark.frontmatter.aboutUs
 
   return (
-    <section className={styles.aboutUs}>
+    <section id="aboutUs" className={styles.aboutUs}>
       <div className={styles.content}>
         <h2 className={styles.title}><span style={{color: 'var(--c-purple)'}}>{data.title[0].part}</span> {data.title[1].part}</h2>
         <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div>

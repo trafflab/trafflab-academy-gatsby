@@ -46,14 +46,6 @@
     box-sizing: border-box;
   }
 
-  .isArrowTopPos .prevArrow, .nextArrow {
-    top: 43rem!important;
-  }
-
-  .isArrowTopPos .nextArrow, .prevArrow {
-    top: 43rem!important;
-  }
-
   .prevArrow {
     top: calc(50% - 16rem);
     left: -0rem;

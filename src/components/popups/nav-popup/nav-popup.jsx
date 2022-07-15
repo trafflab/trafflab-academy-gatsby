@@ -5,7 +5,7 @@ import ContactsList from "../../common/contacts-list/contacts-list";
 import Logo from "../../common/logo/logo";
 import NavPopupElement from "./nav-popup-element/nav-popup-element";
 
-export default function NavPopup({isOpen, closeHandler}) {
+export default function NavPopup({ isOpen, closeHandler }) {
 
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
@@ -18,12 +18,11 @@ export default function NavPopup({isOpen, closeHandler}) {
           
           <nav className={styles.nav}>
             <ul className={styles.list}>
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#' />
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#' />
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#' />
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#' />
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#' />
-              <NavPopupElement closeHandler={closeHandler} text='#' linkTo='#contacts' />
+              <NavPopupElement closeHandler={closeHandler} text='Вебинар' linkTo='#itIsForYou' />
+              <NavPopupElement closeHandler={closeHandler} text='Что узнаешь' linkTo='#imortantThings' />
+              <NavPopupElement closeHandler={closeHandler} text='Для кого' linkTo='#perfectChoice' />
+              <NavPopupElement closeHandler={closeHandler} text='Ведущий' linkTo='#aboutUs' />
+              <NavPopupElement closeHandler={closeHandler} text='Контакты' linkTo='#footer' />
             </ul>
           </nav>
 

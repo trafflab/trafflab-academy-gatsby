@@ -3,7 +3,7 @@
 }
 
 .link {
-  font-size: var(--fz-small);
+  font-size: var(--fz-c-small);
   color: var(--c-white);
   font-weight: 700;
   font-family: var(--f-basic);

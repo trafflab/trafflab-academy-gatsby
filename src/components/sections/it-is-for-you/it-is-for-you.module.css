@@ -78,6 +78,7 @@
 
   .textContainer {
     width: 280rem;
+    height: max-content
   }
 
   .title {

@@ -1,6 +1,8 @@
 .card {
   background: linear-gradient(233.99deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 45.83%);
   backdrop-filter: blur(40px);
+  border: 1rem solid rgba(0, 0, 0, 0.4);
+
   padding: 40rem 89rem 40rem 40rem;
   display: grid;
   gap: 16rem;
