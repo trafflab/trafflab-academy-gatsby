@@ -73,7 +73,7 @@ export default function Success() {
             </div>     
           </div>
 
-          <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div>
+          {/* <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div> */}
 
         </section>
       </main>
