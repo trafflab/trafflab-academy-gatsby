@@ -107,8 +107,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
                   <BasicButton
                     type="button"
                     text='navigate'
-                    isActive={isValid}
-                    handler={navigate('/success')}
+                    handler={() => navigate('/success')}
                   />
                 </div>
                 <div className={styles.buttonContainer}>
@@ -116,7 +115,6 @@ export default function FormPopup({ closeHandler, isOpen }) {
                     <BasicButton
                       type="button"
                       text='link'
-                      isActive={isValid}
                     />
                   </Link>
 
