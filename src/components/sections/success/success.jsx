@@ -59,7 +59,7 @@ export default function Success() {
               </p>
             </div>
 
-            <h1 className={styles.title}>Осталось сделать последний шаг</h1>
+            {/* <h1 className={styles.title}>Осталось сделать последний шаг</h1>
             <p className={styles.subtitle}>Для завершения регистрации перейдите в мессенджер и получите подарок</p>
 
             <div className={styles.buttonContainer}>
@@ -70,7 +70,7 @@ export default function Success() {
                 </div>
               </Link>
               <img src={buttonArrowIcon} className={styles.buttonArrow} />
-            </div>     
+            </div>      */}
           </div>
 
           {/* <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div> */}
