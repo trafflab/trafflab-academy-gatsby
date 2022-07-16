@@ -46,14 +46,14 @@ export default function FormPopup({ closeHandler, isOpen }) {
     }, 1500)
   }
 
-  const handleSendClickButton = (evt) => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-      navigate('/success')
-      closeHandler()
-    }, 1500)
-  }
+  // const handleSendClickButton = (evt) => {
+  //   setIsLoading(true)
+  //   setTimeout(() => {
+  //     setIsLoading(false)
+  //     navigate('/success')
+  //     closeHandler()
+  //   }, 1500)
+  // }
 
   React.useEffect(() => {
     handleReset()
@@ -100,7 +100,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
               isRequired={true}
             />
           </div>
-          {/* {
+          {
             isLoading
               ? <div style={{alignSelf: 'center'}}><Loader/></div>
               : <div className={styles.buttonContainer}>
@@ -111,8 +111,8 @@ export default function FormPopup({ closeHandler, isOpen }) {
                     handler={handleSendClick}
                   />
                 </div>
-          } */}
-              <div className={styles.buttonContainer}>
+          }
+              {/* <div className={styles.buttonContainer}>
                   <BasicButton
                     type="button"
                     text='navigate current'
@@ -141,7 +141,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
                     />
                   </Link>
 
-                </div>
+                </div> */}
         </form>
 
       </div>
