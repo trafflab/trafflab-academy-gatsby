@@ -107,41 +107,11 @@ export default function FormPopup({ closeHandler, isOpen }) {
                   <BasicButton
                     type="submit"
                     text='Отправить'
-                    isActive={isValid}
+                    // isActive={isValid}
                     handler={handleSendClick}
                   />
                 </div>
           }
-              {/* <div className={styles.buttonContainer}>
-                  <BasicButton
-                    type="button"
-                    text='navigate current'
-                    handler={() => navigate('/success')}
-                  />
-                </div>
-                <div className={styles.buttonContainer}>
-                  <BasicButton
-                    type="button"
-                    text='navigate via func button'
-                    handler={handleSendClickButton}
-                  />
-                </div>
-                <div className={styles.buttonContainer}>
-                  <BasicButton
-                    type="submit"
-                    text='navigate via func submit'
-                    handler={handleSendClick}
-                  />
-                </div>
-                <div className={styles.buttonContainer}>
-                  <Link to='/success'>
-                    <BasicButton
-                      type="button"
-                      text='link'
-                    />
-                  </Link>
-
-                </div> */}
         </form>
 
       </div>
