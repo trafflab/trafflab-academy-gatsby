@@ -3,10 +3,11 @@ import * as styles from './form-popup.module.css';
 import PopupLayout from "../popup-layout/popup-layout";
 import { MediaGatsbyImage } from "../../ui";
 import { useStaticQuery, graphql } from "gatsby";
-import { MessagesContext } from '../../../utils/contexts';
+import { navigate } from "gatsby";
 import useForm from '../../../hooks/use-form';
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
+import {Loader} from "../../ui";
 
 export default function FormPopup({ closeHandler, isOpen }) {
   const data = useStaticQuery(graphql`
@@ -18,12 +19,12 @@ export default function FormPopup({ closeHandler, isOpen }) {
           subtitle
           bookImage {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           bookImage_480 {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
         }
@@ -33,9 +34,16 @@ export default function FormPopup({ closeHandler, isOpen }) {
 `).markdownRemark.frontmatter.formPopup
 
   const {values, handleChange, isValid, handleReset} = useForm()
+  const [isLoading, setIsLoading] = React.useState(false);
 
-  const handleSendClick = () => {
-    closeHandler()
+  const handleSendClick = (evt) => {
+    evt.preventDefault()
+    setIsLoading(true)
+    setTimeout(() => {
+      setIsLoading(false)
+      navigate('/success')
+      closeHandler()
+    }, 1500)
   }
 
   React.useEffect(() => {
@@ -83,13 +91,19 @@ export default function FormPopup({ closeHandler, isOpen }) {
                 isRequired={true}
               />
           </div>
-          <div className={styles.buttonContainer}>
-            <BasicButton
-              text='Отправить'
-              isActive={isValid}
-              handler={handleSendClick}
-            />
-          </div>
+          {
+            isLoading
+              ? <Loader/>
+              : <div className={styles.buttonContainer}>
+                  <BasicButton
+                    type="submit"
+                    text='Отправить'
+                    isActive={isValid}
+                    handler={handleSendClick}
+                  />
+                </div>
+          }
+
         </form>
 
       </div>

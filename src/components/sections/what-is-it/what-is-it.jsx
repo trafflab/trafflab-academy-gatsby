@@ -24,7 +24,7 @@ export default function WhatIsIt() {
             }
             image_480 {
               childImageSharp {
-                gatsbyImageData(quality: 95, layout: CONSTRAINED )
+                gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
           }

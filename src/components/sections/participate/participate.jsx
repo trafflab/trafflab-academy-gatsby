@@ -17,22 +17,22 @@ export default function Participate() {
           text
           bgBubble {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           bgBubble_480 {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           clockImage {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           clockImage_480 {
             childImageSharp {
-              gatsbyImageData(quality: 95, layout: CONSTRAINED )
+              gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
         }

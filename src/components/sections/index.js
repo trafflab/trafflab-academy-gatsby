@@ -8,6 +8,7 @@ import AboutUs from "./about-us/about-us";
 import PartnersMarquee from "./partners-marquee/partners-marquee";
 import Participate from './participate/participate'
 import WhatIsIt from "./what-is-it/what-is-it";
+import Success from "./success/success";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   Participate,
   WhatIsIt,
   AboutUs,
+  Success,
 }

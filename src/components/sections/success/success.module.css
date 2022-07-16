@@ -1,0 +1,208 @@
+.successPage {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.success {
+  width: 100%;
+  padding-bottom: 34rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20rem 0 0 120rem;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.i1 {
+  position: absolute;
+  width: 95rem;
+  height: 122rem;
+  top: 110rem;
+  left: 0;
+}
+
+.i2 {
+  position: absolute;
+  width: 82rem;
+  height: 74rem;
+  top: 496rem;
+  left: 47rem;
+}
+
+.i3 {
+  position: absolute;
+  width: 119rem;
+  height: 52rem;
+  top: 518rem;
+  left: 468rem;
+}
+
+
+.card {
+  padding: 16rem;
+  display: grid;
+  gap: 16rem;
+  grid-auto-flow: column;
+  background: linear-gradient(233.99deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 45.83%);
+  border-radius: 16px;
+  width: 450rem;
+  margin: 65rem 0 34rem;
+  box-sizing: border-box;
+}
+
+.cardtext {
+  font-size: var(--fz-b-medium);
+  font-weight: 400;
+  line-height: 24rem;
+  color: var(--c-white);
+}
+
+.title {
+  font-size: 32rem;
+  font-weight: 700;
+  line-height: 42rem;
+  color: var(--c-white);
+  margin-bottom: 12rem;
+  width: 410rem;
+}
+
+.subtitle {
+  font-size: var(--fz-b-big);
+  font-weight: 400;
+  line-height: 26rem;
+  color: var(--c-white);
+  margin-bottom: 32rem;
+  width: 360rem;
+}
+
+.buttonContainer {
+  position: relative;
+  width: 195rem;
+  box-sizing: border-box;
+}
+
+.buttonContainer > a {
+  text-decoration: none;
+}
+
+
+
+.buttonArrow {
+  position: absolute;
+  width: 97rem;
+  height: 69rem;
+  top: -26rem;
+  right: -126rem;
+}
+
+.tgButton {
+  border: 2rem solid #53A2DC;
+  padding: 17rem 34rem;
+  background-color: transparent;
+  font-size: var(--fz-b-big);
+  font-weight: 700;
+  line-height: 22rem;
+  color: var(--c-white);
+  border-radius: 40rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.35s ease-out background-color;
+  align-items: center;
+}
+
+.tgButton:hover {
+  background-color: #53A2DC;
+}
+
+.imageContainer {
+  width: 794rem;
+  height: 622rem;
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .bg {
+    display: none;
+  }
+  .buttonArrow {
+    display: none;
+  }
+
+  .success {
+    width: 100%;
+    padding-bottom: 16rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 16rem;
+  }
+  
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 280rem;
+  }
+
+  .card {
+    padding: 16rem;
+    width: 280rem;
+    margin: 20rem 0 24rem;
+  }
+
+  .cardtext {
+    font-size: var(--fz-b-small);
+    line-height: 18rem;
+  }
+
+  .title {
+    font-size: var(--fz-c-medium);
+    line-height: 30rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  
+  .subtitle {
+    font-size: var(--fz-b-medium);
+    line-height: 22rem;
+    margin-bottom: 16rem;
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 313rem;
+  }
+
+  .buttonContainer {
+    width: 164rem;
+  }
+  .tgButton {
+    padding: 17rem 24rem;
+    font-size: var(--fz-b-medium);
+    line-height: 22rem;
+  }
+}

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { PageLayout } from "../components/layouts";
 import {
-  Footer,
+  Success,
+  Footer
 } from '../components/sections';
 
 export default function SuccessPage() {
@@ -9,7 +10,7 @@ export default function SuccessPage() {
 
   return (
     <PageLayout>
-      <Footer />
+      <Success/>
     </PageLayout>
   )
 }

@@ -190,5 +190,13 @@ formPopup:
   subtitle: Получите подробную программу обучения
   bookImage: ../images/form-popup/book.png
   bookImage_480: ../images/form-popup/book_480.png
+success:
+  image: ../images/success/success.png
+  image_480: ../images/success/success_480.png
+  coins:
+    - coin: ../images/success/coin-1.png
+    - coin: ../images/success/coin-2.png
+    - coin: ../images/success/coin-3.png
+
 
 ---
