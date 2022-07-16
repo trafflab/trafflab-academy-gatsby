@@ -46,6 +46,15 @@ export default function FormPopup({ closeHandler, isOpen }) {
     }, 1500)
   }
 
+  const handleSendClickButton = (evt) => {
+    setIsLoading(true)
+    setTimeout(() => {
+      setIsLoading(false)
+      navigate('/success')
+      closeHandler()
+    }, 1500)
+  }
+
   React.useEffect(() => {
     handleReset()
   }, [])
@@ -106,9 +115,22 @@ export default function FormPopup({ closeHandler, isOpen }) {
               <div className={styles.buttonContainer}>
                   <BasicButton
                     type="button"
-                    text='navigate'
-                    isActive={isValid}
-                    handler={navigate('/success')}
+                    text='navigate current'
+                    handler={() => navigate('/success')}
+                  />
+                </div>
+                <div className={styles.buttonContainer}>
+                  <BasicButton
+                    type="button"
+                    text='navigate via func button'
+                    handler={handleSendClickButton}
+                  />
+                </div>
+                <div className={styles.buttonContainer}>
+                  <BasicButton
+                    type="submit"
+                    text='navigate via func submit'
+                    handler={handleSendClick}
                   />
                 </div>
                 <div className={styles.buttonContainer}>
@@ -116,7 +138,6 @@ export default function FormPopup({ closeHandler, isOpen }) {
                     <BasicButton
                       type="button"
                       text='link'
-                      isActive={isValid}
                     />
                   </Link>
 

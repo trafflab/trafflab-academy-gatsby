@@ -77,7 +77,7 @@ export default function Success() {
 
         </section>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
     
   )
