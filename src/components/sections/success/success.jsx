@@ -42,7 +42,7 @@ export default function Success() {
     <div className={styles.successPage}>
       <main className={styles.main}>
         <section className={styles.success}>
-          <div className={styles.bg}>
+          {/* <div className={styles.bg}>
             <div className={styles.i1}><MediaGatsbyImage image={data.coins[0].coin} /></div>
             <div className={styles.i2}><MediaGatsbyImage image={data.coins[1].coin} /></div>
             <div className={styles.i3}><MediaGatsbyImage image={data.coins[2].coin} /></div>
@@ -59,7 +59,7 @@ export default function Success() {
               </p>
             </div>
 
-            {/* <h1 className={styles.title}>Осталось сделать последний шаг</h1>
+            <h1 className={styles.title}>Осталось сделать последний шаг</h1>
             <p className={styles.subtitle}>Для завершения регистрации перейдите в мессенджер и получите подарок</p>
 
             <div className={styles.buttonContainer}>
@@ -70,10 +70,10 @@ export default function Success() {
                 </div>
               </Link>
               <img src={buttonArrowIcon} className={styles.buttonArrow} />
-            </div>      */}
+            </div>     
           </div>
 
-          {/* <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div> */}
+          <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div> */}
 
         </section>
       </main>
