@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 123rem;
+  position: relative;
 }
 
 .textContainer {
@@ -30,9 +31,11 @@
   font-weight: 700;
   line-height: 62rem;
   color: var(--c-white);
-  margin-bottom: 24rem;
+  margin-bottom: 60rem;
   width: 465rem;
   font-family: var(--f-basic);
+  position: sticky;
+  top: 20rem;
 }
 
 .buttonContainer {
