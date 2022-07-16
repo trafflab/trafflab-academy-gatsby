@@ -66,34 +66,34 @@ export default function FormPopup({ closeHandler, isOpen }) {
             <p className={styles.subtitle}>{data.subtitle}</p>
           </div>
           <div className={styles.inputsContainer}>
-              <BasicInput
-                name='name'
-                placeholder='Имя'
-                value={values.name}
-                onChange={handleChange}
-                minLength={1}
-                isRequired={true}
-              />
-              <BasicInput
-                name='phone'
-                placeholder='Телефон'
-                value={values.phone}
-                onChange={handleChange}
-                minLength={1}
-                isRequired={true}
-              />
-              <BasicInput
-                name='email'
-                placeholder='E-mail'
-                value={values.email}
-                onChange={handleChange}
-                minLength={1}
-                isRequired={true}
-              />
+            <BasicInput
+              name='name'
+              placeholder='Имя'
+              value={values.name}
+              onChange={handleChange}
+              minLength={1}
+              isRequired={true}
+            />
+            <BasicInput
+              name='phone'
+              placeholder='Телефон'
+              value={values.phone}
+              onChange={handleChange}
+              minLength={1}
+              isRequired={true}
+            />
+            <BasicInput
+              name='email'
+              placeholder='E-mail'
+              value={values.email}
+              onChange={handleChange}
+              minLength={1}
+              isRequired={true}
+            />
           </div>
           {
             isLoading
-              ? <Loader/>
+              ? <div style={{alignSelf: 'center'}}><Loader/></div>
               : <div className={styles.buttonContainer}>
                   <BasicButton
                     type="submit"
