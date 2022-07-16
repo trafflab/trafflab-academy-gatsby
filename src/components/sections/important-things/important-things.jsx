@@ -22,7 +22,7 @@ export default function ImportantThings() {
               imageAlt
               cardImage {
                 childImageSharp {
-                  gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
             }

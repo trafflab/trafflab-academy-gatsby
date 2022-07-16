@@ -75,6 +75,7 @@
   font-weight: 400;
   line-height: 24rem;
   color: var(--c-white);
+
 }
 
 .title {
@@ -176,20 +177,21 @@
   .cardtext {
     font-size: var(--fz-b-small);
     line-height: 18rem;
+    /* width: 280rem; */
   }
 
   .title {
     font-size: var(--fz-c-medium);
     line-height: 30rem;
     margin-bottom: 8rem;
-    width: 100%;
+    width: 280rem;
   }
   
   .subtitle {
     font-size: var(--fz-b-medium);
     line-height: 22rem;
     margin-bottom: 16rem;
-    width: 100%;
+    width: 280rem;
   }
 
   .imageContainer {

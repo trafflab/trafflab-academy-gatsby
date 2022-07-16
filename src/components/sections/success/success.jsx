@@ -18,18 +18,18 @@ export default function Success() {
           success {
             image{
               childImageSharp {
-                gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             image_480 {
               childImageSharp {
-                gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             coins {
               coin {
                 childImageSharp {
-                  gatsbyImageData(quality: 95, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
             }
@@ -61,6 +61,7 @@ export default function Success() {
 
             <h1 className={styles.title}>Осталось сделать последний шаг</h1>
             <p className={styles.subtitle}>Для завершения регистрации перейдите в мессенджер и получите подарок</p>
+
             <div className={styles.buttonContainer}>
               <Link to="#">
                 <div type='button' className={styles.tgButton} disabled>
@@ -71,7 +72,9 @@ export default function Success() {
               <img src={buttonArrowIcon} className={styles.buttonArrow} />
             </div>     
           </div>
+
           <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} image_480={data.image_480} /></div>
+
         </section>
       </main>
       <Footer />
