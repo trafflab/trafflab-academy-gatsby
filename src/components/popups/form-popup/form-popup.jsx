@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './form-popup.module.css';
 import PopupLayout from "../popup-layout/popup-layout";
 import { MediaGatsbyImage } from "../../ui";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { navigate } from "gatsby";
 import useForm from '../../../hooks/use-form';
 import BasicButton from "../../ui/basic-button/basic-button";
@@ -91,7 +91,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
               isRequired={true}
             />
           </div>
-          {
+          {/* {
             isLoading
               ? <div style={{alignSelf: 'center'}}><Loader/></div>
               : <div className={styles.buttonContainer}>
@@ -102,8 +102,25 @@ export default function FormPopup({ closeHandler, isOpen }) {
                     handler={handleSendClick}
                   />
                 </div>
-          }
+          } */}
+              <div className={styles.buttonContainer}>
+                  <BasicButton
+                    type="button"
+                    text='navigate'
+                    isActive={isValid}
+                    handler={navigate('/success')}
+                  />
+                </div>
+                <div className={styles.buttonContainer}>
+                  <Link to='/success'>
+                    <BasicButton
+                      type="button"
+                      text='link'
+                      isActive={isValid}
+                    />
+                  </Link>
 
+                </div>
         </form>
 
       </div>
