@@ -107,7 +107,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
                   <BasicButton
                     type="submit"
                     text='Отправить'
-                    // isActive={isValid}
+                    isActive={isValid}
                     handler={handleSendClick}
                   />
                 </div>

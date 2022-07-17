@@ -20,13 +20,13 @@ export default function PageLayout({ children }) {
         <meta name="description" content="Trafflab Academy" />
         <meta name="keywords" content="Trafflab, academy" />
         <link rel="icon" type='image/x-icon' href={favicon} />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
         <meta name="yandex-verification" content="yandex webmaster id" />
         <meta name="google-site-verification" content="google webmaster id" />
       </Helmet>
       <div className={styles.page}>
         {children}
-        <YMInitializer accounts={[89406166]} options={{webvisor: true}} version="2" />
+        <YMInitializer accounts={[1212]} options={{webvisor: true}} version="2" />
       </div>
     </Is480Context.Provider>
   )
