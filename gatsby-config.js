@@ -1,12 +1,21 @@
 module.exports = {
   siteMetadata: {
     title: `Trafflab Academy`,
-    siteUrl: `https://trafflab.com`
+    siteUrl: `https://luxury-smakager-89e9c5.netlify.app`
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        serialize: () => ([{
+          url: './',
+          lastmod: new Date(),
+        }])
+      }
+    },
   // {
   //   resolve: 'gatsby-plugin-manifest',
   //   options: {
