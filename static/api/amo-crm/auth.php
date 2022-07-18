@@ -42,6 +42,12 @@ if ($code < 200 || $code > 204) die( "Error $code. " . (isset($errors[$code]) ? 
 
 $response = json_decode($out, true);
 
+echo $response['access_token'];
+echo $response['refresh_token'];
+echo $response['token_type'];
+echo $response['expires_in'];
+echo $response['expires_in'] + time();
+
 $arrParamsAmo = [
 	"access_token"  => $response['access_token'],
 	"refresh_token" => $response['refresh_token'],
@@ -57,3 +63,4 @@ fwrite($f, $arrParamsAmo);
 fclose($f);
 
 print_r($arrParamsAmo);
+?>

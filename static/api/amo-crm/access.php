@@ -65,3 +65,5 @@ if ($dataToken["endTokenTime"] - 60 < time()) {
 } else {
     $access_token = $dataToken["access_token"];
 }
+
+?>

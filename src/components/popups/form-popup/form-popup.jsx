@@ -8,6 +8,7 @@ import useForm from '../../../hooks/use-form';
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 import {Loader} from "../../ui";
+import PhoneInput from 'react-phone-input-2'
 
 export default function FormPopup({ closeHandler, isOpen }) {
   const data = useStaticQuery(graphql`
@@ -39,21 +40,28 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const handleSendClick = (evt) => {
     evt.preventDefault()
     setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-      navigate('/success')
-      closeHandler()
-    }, 1500)
+
+    let data = new FormData()
+    data.append('name', values.name);
+    data.append('phone', values.phone);
+    data.append('email', values.email);
+
+    fetch('/api/amo-crm/amo.php', {
+      method: 'POST',
+      body: data,
+    })
+    .then((res ) => {
+      if (res.ok) {
+        setIsLoading(false)
+        navigate('/success')
+      } else {
+        setIsLoading(false)
+        navigate('/success')
+        console.log('ph form error')
+      }
+    })
   }
 
-  // const handleSendClickButton = (evt) => {
-  //   setIsLoading(true)
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //     navigate('/success')
-  //     closeHandler()
-  //   }, 1500)
-  // }
 
   React.useEffect(() => {
     handleReset()
@@ -69,7 +77,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
           <p className={styles.giftText}>Гайд «10 шагов к заработку в валюте»<span style={{color: 'var(--c-purple)'}}> в подарок</span></p>
         </div>
 
-        <form className={styles.form}>
+        <form className={styles.form}  >
           <div className={styles.textContainer}>
             <p className={styles.title}>{data.title}</p>
             <p className={styles.subtitle}>{data.subtitle}</p>
@@ -82,14 +90,21 @@ export default function FormPopup({ closeHandler, isOpen }) {
               onChange={handleChange}
               minLength={1}
               isRequired={true}
+              type='text'
             />
-            <BasicInput
-              name='phone'
+            <PhoneInput 
+              inputProps={{
+                name: 'phone',
+                required: true,
+              }}
               placeholder='Телефон'
               value={values.phone}
               onChange={handleChange}
-              minLength={1}
-              isRequired={true}
+              inputClass={styles.phoneInput}
+              containerClass={styles.phoneInputContainer}
+              buttonClass={styles.phoneInputButton}
+              dropdownClass={styles.phoneInputdropdown}
+              disableDropdown={false}
             />
             <BasicInput
               name='email'
@@ -98,6 +113,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
               onChange={handleChange}
               minLength={1}
               isRequired={true}
+              type='email'
             />
           </div>
           {

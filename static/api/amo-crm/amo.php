@@ -2,20 +2,17 @@
 
 require_once 'access.php';
 
-$name = 'Имя клиента';
-$phone = '+380123456789';
-$email = 'email@gmail.com';
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
 $target = 'Цель';
-$company = 'Название компании';
-
-$custom_field_id = 454021;
-$custom_field_value = 'тест';
+$company = 'Лендинг академии traffacademy.com';
 
 $ip = '1.2.3.4';
-$domain = 'site.com';
+$domain = 'https://traffacademy.com/';
 $price = 0;
-$pipeline_id = 5059931;
-$user_amo = 0;
+$pipeline_id = 5594758;
+$user_amo = 8372887;
 
 $utm_source   = '';
 $utm_content  = '';
@@ -62,14 +59,6 @@ $data = [
                                 ]
                             ]
                         ],
-                        [
-                            "field_id" => (int) $custom_field_id,
-                            "values" => [
-                                [
-                                    "value" => $custom_field_value
-                                ]
-                            ]
-                        ]
                     ]
                 ]
             ],
@@ -165,7 +154,10 @@ $errors = [
     503 => 'Service unavailable.'
 ];
 
-if ($code < 200 || $code > 204) die( "Error $code. " . (isset($errors[$code]) ? $errors[$code] : 'Undefined error') );
+if ($code < 200 || $code > 204) {
+    http_response_code($code);
+    die($code);
+} 
 
 
 $Response = json_decode($out, true);
@@ -175,3 +167,4 @@ foreach ($Response as $v)
     if (is_array($v))
         $output .= $v['id'] . PHP_EOL;
 return $output;
+?>

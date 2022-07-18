@@ -5,6 +5,10 @@ export default function useForm() {
   const [isValid, setIsValid] = React.useState(false)
   
   const handleChange = (evt) => {
+    if (typeof evt === 'string') {
+      setValues({...values, phone: evt})
+      return
+    } 
     const target = evt.target
     const name = target.name;
     setValues({...values, [name]: target.value})

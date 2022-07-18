@@ -1,7 +1,8 @@
 <?php
-$subdomain     = ''; // поддомен AmoCRM
-$client_secret = ''; // Секретный ключ
-$client_id     = ''; // ID интеграции
-$code          = ''; // Код авторизации
+$subdomain     = 'alantrafflabcom'; // поддомен AmoCRM
+$client_secret = 'f0SOBJcUnPG1TK9X8VLwiWDMLOXuaPynqgQVgDJirNCP3gOcTZHA32quxYXgoKd5'; // Секретный ключ
+$client_id     = '72ed6c73-facb-4ed9-8d32-faa89bfda2de'; // ID интеграции
+$code          = 'def50200155e9692184610a5b87034d8b4d117d999f58fd10e0fd653674536f915dc7112bd0568494246dca230c1ceef13ef204ef9ff2e204fa9d67c6abdd8bbdc2e2ec41ca77bc4dfb21d9eb0b86301bb20eb6a7ece089fcbd9f432a4d59e76e913a88407a31b2e51d2f201834703fe44ad1a15199db0ba2bbaa144efeab9216cfd0f16754e0f6e2737d5c8eb85b3e5273ea9470a8092a8b115d628b079ac451abfc31634c790211b47c194e6810ce537c80470787155f8a89baef55cd0e3c2a2b77528c7556cb2e54263d99fcbf4ba7c0b744b1bdcf55bb3d8109b4c4ed7f1e7645bd03e9e792a35e0f12c4359586b8fd72d8df975cb609669c47e432b1540a64bb7d53c3e562c8bc739197253346ee116027b667bf6f550bbaad1b77dbea8cf7dabc6a6283ecfaf65775c8f8f7819b17ba6097b14a987ae93d93b8d8e2a15b4c7381112988d65419bef7f3d2148308a3b257391afcbe0ddd36e2d96f0a9e24b4a4aeee8004e6249b5877bda10739b5fe21bf531755182a7f6e36adaa2025d0a43d628c0a05d13d65dc9628918230ded8a5916420ec6bfd791d78aa68f1ea1d0a065613c83533fea5684aa72e832d0f688d08e8c43204543aef89af79ce99041bd335a1ccc833f230ebf495a960387accd37558a4dc400b52dc9'; // Код авторизации
 $token_file    = 'tokens.txt';
-$redirect_uri  = 'https://site.com/amo/amo.php';
+$redirect_uri  = 'https://traffacademy.com/';
+?>
