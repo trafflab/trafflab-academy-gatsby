@@ -20,12 +20,12 @@ export default function FormPopup({ closeHandler, isOpen }) {
           subtitle
           bookImage {
             childImageSharp {
-              gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+              gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           bookImage_480 {
             childImageSharp {
-              gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+              gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
         }
@@ -54,10 +54,13 @@ export default function FormPopup({ closeHandler, isOpen }) {
       if (res.ok) {
         setIsLoading(false)
         navigate('/success')
+        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
+
       } else {
         setIsLoading(false)
         navigate('/success')
         console.log('ph form error')
+        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
       }
     })
   }
@@ -74,7 +77,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
 
         <div className={styles.gift}>
           <div className={styles.imageContainer}><MediaGatsbyImage image={data.bookImage} image_480={data.bookImage_480} /></div>
-          <p className={styles.giftText}>Гайд «10 шагов к заработку в валюте»<span style={{color: 'var(--c-purple)'}}> в подарок</span></p>
+          <p className={styles.giftText}>Гайд «5 шагов для заработка от 3000$ в месяц в онлайне»<span style={{color: 'var(--c-purple)'}}> в подарок</span></p>
         </div>
 
         <form className={styles.form}  >

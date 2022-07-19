@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import { BasicButton, MediaGatsbyImage } from '../../ui/'
 import OpeningCardList from './opening-card-list/opening-card-list';
 import { GiftIcon } from "../../ui/icons";
-import curveArrow from '../../../images/misc/curve-arrow.svg';
 
 export default function Opening() {
   const is480 = React.useContext(Is480Context);
@@ -23,17 +22,19 @@ export default function Opening() {
               text
             }
             giftText
+            giftText_480
             tag
-            text
+            name
+            jobTitle
             imageAlt
             personImage {
               childImageSharp {
-                gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             personImage_480 {
               childImageSharp {
-                gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED)
+                gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -54,14 +55,12 @@ export default function Opening() {
 
           <h1 className={styles.title}>Как зарабатывать<br/>от 30 000 $ на арбитраже трафика</h1>
 
-          <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}>
-            <img src={curveArrow} className={styles.curveArrow} />
             <BasicButton handler={openFormPopup} text={is480 ? data.buttonText_480 : data.buttonText}/>
           </div>
           <div className={styles.gift}>
             <GiftIcon />
-            <p className={styles.giftText}>{data.giftText}</p>
+            <p className={styles.giftText}>{is480 ? data.giftText_480 : data.giftText}</p>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -70,6 +69,10 @@ export default function Opening() {
             image_480={data.personImage_480}
             alt={data.imageAlt}
           />
+          <div className={styles.nameContainer}>
+            <p className={styles.name}>{data.name}</p>
+            <p className={styles.jobTitle}>{data.jobTitle}</p>
+          </div>
         </div>
       </div>
       <OpeningCardList cards={data.cards} />

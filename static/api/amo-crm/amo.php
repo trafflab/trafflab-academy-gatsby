@@ -11,8 +11,8 @@ $company = 'Лендинг академии traffacademy.com';
 $ip = '1.2.3.4';
 $domain = 'https://traffacademy.com/';
 $price = 0;
-$pipeline_id = 5594758;
-$user_amo = 8372887;
+$pipeline_id = 5586244;
+$user_amo = 8362828;
 
 $utm_source   = '';
 $utm_content  = '';

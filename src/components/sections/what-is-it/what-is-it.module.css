@@ -59,10 +59,13 @@
     height: 360rem;
     margin-bottom: 16rem;
     display: block;
+
   }
 
   .whatIsIt {
     padding-bottom: 40rem;
+    padding-top: 0;
+
   }
 
   .content {

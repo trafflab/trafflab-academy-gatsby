@@ -12,21 +12,21 @@ export default function BgElements() {
             bubbles {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }
             bubbles_480 {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
             }
             items {
               item {
                 childImageSharp {
-                  gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }

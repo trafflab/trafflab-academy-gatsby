@@ -47,7 +47,7 @@
 
 .masterOf {
   font-size: var(--fz-b-big);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24rem;
   color: var(--c-gray-1);
 }

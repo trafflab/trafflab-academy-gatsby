@@ -62,5 +62,4 @@ $f = fopen($token_file, 'w');
 fwrite($f, $arrParamsAmo);
 fclose($f);
 
-print_r($arrParamsAmo);
 ?>

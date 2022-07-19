@@ -44,10 +44,10 @@ module.exports = {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
       trackingIds: [
-        "your-gtag-id",
+        "G-H8VY8JJWKJ",
       ],
       pluginConfig: {
-        head: true,
+        head: false,
         respectDNT: false,
       },
     },

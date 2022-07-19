@@ -22,8 +22,8 @@ export default function Footer() {
         <div className={styles.logoContainer}>
           <Link to={'/'}><Logo /></Link>
           <ul className={styles.requisitesList}>
-            <li><p>ИП Иванов Иван Иванович</p></li>
-            <li><p>ИНН 1234567890</p></li>
+            <li><p>ООО "КПМ"</p></li>
+            <li><p>ИНН 9701164081</p></li>
           </ul>
         </div>
 

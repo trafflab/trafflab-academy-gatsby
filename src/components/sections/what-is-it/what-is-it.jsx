@@ -24,7 +24,7 @@ export default function WhatIsIt() {
             }
             image_480 {
               childImageSharp {
-                gatsbyImageData(quality: 60, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
           }
@@ -33,9 +33,9 @@ export default function WhatIsIt() {
     }
   `).markdownRemark.frontmatter.whatIsIt
   return (
-    <section id='whatIsIt' className={styles.whatIsIt}>
+    <section className={styles.whatIsIt}>
       <div className={styles.imageContainer}><MediaGatsbyImage image_480={data.image_480}/></div>
-      <div className={styles.content}>
+      <div id='whatIsIt' className={styles.content}>
           <h2 className={styles.title}><span style={{color: 'var(--c-purple)'}}>{data.title[0].part}</span> {data.title[1].part}</h2>
           <p className={styles.text}>{data.text}</p>
         
