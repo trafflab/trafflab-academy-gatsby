@@ -20,12 +20,12 @@ export default function FormPopup({ closeHandler, isOpen }) {
           subtitle
           bookImage {
             childImageSharp {
-              gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+              gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
           bookImage_480 {
             childImageSharp {
-              gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+              gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
             }
           }
         }

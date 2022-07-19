@@ -25,7 +25,7 @@ export default function SliderLayout({ gap_480="16rem", children }) {
 
       <div className={`splide__arrows ${styles.arrowContainer}`}>
         <button className={`splide__arrow splide__arrow--prev ${styles.prevArrow}`}>
-          <ArrowButton isLeft />
+          {/* <ArrowButton isLeft /> */}
         </button> 
 
         <SplideTrack>

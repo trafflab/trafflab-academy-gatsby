@@ -17,16 +17,17 @@ export default function PageLayout({ children }) {
       <Helmet htmlAttributes={{lang: 'ru'}}>
         <meta charSet='utf-8' />
         <meta name='author' content='Trafflab' />
-        <meta name="description" content="Trafflab Academy" />
-        <meta name="keywords" content="Trafflab, academy" />
+        <meta name="description" content="Как зарабатывать 30 000 $ на арбитраже трафика от Тамерлана Сафиуллина" />
+        <meta name="keywords" content="Trafflab, academy, арбитраж, трафик, заработок, обучение, Тамерлан Сафиуллина" />
         <link rel="icon" type='image/x-icon' href={favicon} />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
         <meta name="yandex-verification" content="a71896519426bd38" />
-        <meta name="google-site-verification" content="vHfBpIrDgu5ZC2s6ND_IScsSynN4gJb7E8Yj1LQXeEk" />
+        <meta name="google-site-verification" content="WIioruuTqjwjxZLLtd6XLTpy892y3B2tSbQjm7q825Q" />
+        <title>Trafflab Academy</title>
       </Helmet>
       <div className={styles.page}>
         {children}
-        <YMInitializer accounts={[89616968]} options={{webvisor: true}} version="2" />
+        <YMInitializer accounts={[89616968]} options={{webvisor: false}} version="2" />
       </div>
     </Is480Context.Provider>
   )

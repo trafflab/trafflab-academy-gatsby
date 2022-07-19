@@ -8,25 +8,36 @@ export default function BgElements() {
     query bgElementsQuery {
       markdownRemark {
         frontmatter {
+
           bgElements {
+            openingBg {
+              childImageSharp {
+                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: BLURRED )
+              }
+            }
+            openingBg_480 {
+              childImageSharp {
+                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: BLURRED )
+              }
+            }
             bubbles {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }
             bubbles_480 {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
             }
             items {
               item {
                 childImageSharp {
-                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }
@@ -41,6 +52,8 @@ export default function BgElements() {
   return (
     <div className={styles.backgroundItems}>
       <div className={styles.bubbles}>
+        <div className={styles.openingBg}><MediaGatsbyImage image={data.openingBg}/></div>
+
         <div className={styles.b1}><MediaGatsbyImage image={bubblesData[0].bubble}/></div>
         <div className={styles.b2}><MediaGatsbyImage image={bubblesData[1].bubble}/></div>
         <div className={styles.b3}><MediaGatsbyImage image={bubblesData[2].bubble}/></div>
@@ -52,11 +65,14 @@ export default function BgElements() {
         <div className={styles.b9}><MediaGatsbyImage image={bubblesData[8].bubble}/></div>
       </div>
       <div className={styles.bubbles_480}>
+      <div className={styles.openingBg_480}><MediaGatsbyImage image={data.openingBg_480}/></div>
+
         <div className={styles.b1_480}><MediaGatsbyImage image_480={bubblesData_480[0].bubble}/></div>
         <div className={styles.b2_480}><MediaGatsbyImage image_480={bubblesData_480[1].bubble}/></div>
         <div className={styles.b3_480}><MediaGatsbyImage image_480={bubblesData_480[2].bubble}/></div>
         <div className={styles.b4_480}><MediaGatsbyImage image_480={bubblesData_480[3].bubble}/></div>
         <div className={styles.b5_480}><MediaGatsbyImage image_480={bubblesData_480[4].bubble}/></div>
+        <div className={styles.b6_480}><MediaGatsbyImage image_480={bubblesData_480[5].bubble}/></div>
       </div>
       <div className={styles.items}>
         <div className={styles.i1}><MediaGatsbyImage image={itemsData[0].item}/></div>

@@ -9,7 +9,7 @@ opening:
   giftText: 'Зарегистрируйся и получи гайд «5 шагов для заработка от 3000$ в месяц в онлайне»'
   giftText_480: 'Гайд «5 шагов для заработка от 3000$ в месяц в онлайне»'
   personImage: ../images/opening/el-tamik.png
-  personImage_480: ../images/opening/el-tamik_480.png
+  personImage_480: ../images/opening/el-tamik_480-1.png
   imageAlt: 'Тамерлан Сафиуллин'
   cards:
         - title: 'Что такое арбитраж трафика?'
@@ -160,6 +160,8 @@ participate:
   text: На встрече вы сможете задать все интересующие вопросы Тамерлану и арбитражникам из его команды
   buttonText: Принять участие
 bgElements:
+  openingBg: ../images/bg-elements/bg-lucky-cat.png
+  openingBg_480: ../images/bg-elements/bg-lucky-cat_480.png
   bubbles:
     - bubble: ../images/bg-elements/b-1.png
     - bubble: ../images/bg-elements/b-2.png
@@ -176,6 +178,7 @@ bgElements:
     - bubble: ../images/bg-elements/b-3_480.png
     - bubble: ../images/bg-elements/b-4_480.png
     - bubble: ../images/bg-elements/b-5_480.png
+    - bubble: ../images/bg-elements/b-6_480.png
   items:
     - item: ../images/bg-elements/i-1.png
     - item: ../images/bg-elements/i-2.png

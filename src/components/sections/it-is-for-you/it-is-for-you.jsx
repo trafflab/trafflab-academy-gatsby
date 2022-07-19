@@ -19,7 +19,7 @@ export default function ItIsForYou() {
             cards {
               cardImage {
                 childImageSharp {
-                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
               text

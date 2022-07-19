@@ -6,7 +6,7 @@
 }
 
 .prevArrow {
-  position: absolute;
+  /* position: absolute;
   top: calc(50% - 30rem);
   left: 0;
   z-index: 2;
@@ -14,7 +14,8 @@
   border: none;
   transition: 0.35s ease-out opacity, 0.35s ease-out visability;
   visibility: visible;
-  opacity: 1;
+  opacity: 1; */
+  display: none;
 }
 
 .prevArrow:disabled {
@@ -47,8 +48,8 @@
   }
 
   .prevArrow {
-    top: calc(50% - 16rem);
-    left: -0rem;
+    /* top: calc(50% - 16rem);
+    left: -0rem; */
   }
   
   .prevArrow:disabled {

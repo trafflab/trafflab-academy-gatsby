@@ -161,14 +161,14 @@
   }
 
   .imageContainer {
-    width: 100%;
+    width: 224rem;
     height: 280rem;
   }
 
   .nameContainer {
     position: absolute;
-    top: 16rem;
-    right: 0rem;
+    top: 11rem;
+    right: -41rem;
     width: 100rem;
   }
   
