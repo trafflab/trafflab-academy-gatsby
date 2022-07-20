@@ -44,26 +44,17 @@ export default function Opening() {
   `).markdownRemark.frontmatter.opening
 
   const handleTest = () => {
-    fetch('https://trafflabacademy.amocrm.ru/api/v4/leads', {
+    fetch('https://traffacademy.com/api/amo-crm/rest-amo.php', {
       method: 'POST',
-      // mode: 'no-cors',
-      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImVhNTUzMTllN2U2ZDhlMTcxNzg5MTQ2YzViZWY1NTI1MDE4N2NmMTg2YWI0MDZiYjNhMmIzOWNjMzE4YmM2ZGQ4YmJlZDljNTU1ZGQ4ZTBiIn0.eyJhdWQiOiIzOGFmMGI1Yy1jMmQ4LTQ5NDMtOTk5Mi00NjcyZGY4YzBlNjUiLCJqdGkiOiJlYTU1MzE5ZTdlNmQ4ZTE3MTc4OTE0NmM1YmVmNTUyNTAxODdjZjE4NmFiNDA2YmIzYTJiMzljYzMxOGJjNmRkOGJiZWQ5YzU1NWRkOGUwYiIsImlhdCI6MTY1ODI1OTc4MSwibmJmIjoxNjU4MjU5NzgxLCJleHAiOjE2NTgzNDYxODEsInN1YiI6IjgzNzI4ODciLCJhY2NvdW50X2lkIjozMDI3ODMwOCwic2NvcGVzIjpbInB1c2hfbm90aWZpY2F0aW9ucyIsImZpbGVzIiwiY3JtIiwiZmlsZXNfZGVsZXRlIiwibm90aWZpY2F0aW9ucyJdfQ.ZG1TJYR104RzF0aN0-5pG2rri2_roJrMT_A-E-T-fGI4FXTIiPsabyST_GxMPrzzJGVrkrTVO3-wSFaWyAyusTem5HLrDtWlEJhXDKB7HYKnaU9OFsvFjq3M-NFvOf3T0z_gCzOa8KS_2G2d9eXrxlkcl4DAWqXe4kHWGKiHQkb2V_2nCPIj3-UWGF_epeH0B8DxuIGZp0i-ZaTXVxVkA3tAc7zkqcYd4aWvpP0v4fuEOiiVLX9kxuJUUeA2lqY_sh2uUm-Iwov3YzwFapf-Ai9aZS19uzVHFHubv1AQ8skT951lvOZ_N_SlLJJvFSK1azFvgkxyN57hYg3dypJahQ",
-        "User-Agent": 'amoCRM-API-client/1.0',
       },
       body: JSON.stringify(
-          [
-            {
-                "name": "Сделка для примера 1",
-                "price": 20000,
-            },
-            {
-                "name": "Сделка для примера 2",
-                "price": 10000,
-            }
-        ]
+        {
+            "name": "test",
+            "phone": '20000',
+            "email": "bla"
+        },
       )
     })
     .then(data => console.log(data))
