@@ -12,27 +12,27 @@ import PhoneInput from 'react-phone-input-2'
 
 export default function FormPopup({ closeHandler, isOpen }) {
   const data = useStaticQuery(graphql`
-  query formPopupQuery {
-    markdownRemark {
-      frontmatter {
-        formPopup {
-          title
-          subtitle
-          bookImage {
-            childImageSharp {
-              gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+    query formPopupQuery {
+      markdownRemark {
+        frontmatter {
+          formPopup {
+            title
+            subtitle
+            bookImage {
+              childImageSharp {
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+              }
             }
-          }
-          bookImage_480 {
-            childImageSharp {
-              gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+            bookImage_480 {
+              childImageSharp {
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+              }
             }
           }
         }
       }
     }
-  }
-`).markdownRemark.frontmatter.formPopup
+  `).markdownRemark.frontmatter.formPopup
 
   const {values, handleChange, isValid, handleReset} = useForm()
   const [isLoading, setIsLoading] = React.useState(false);
@@ -40,18 +40,18 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const handleSendClick = (evt) => {
     evt.preventDefault()
     setIsLoading(true)
+    const dataToSend = {
+      name: values.name,
+      phone: values.phone,
+      email: values.email,
+    }
+    console.log(dataToSend);
     fetch('https://traffacademy.com/api/amo-crm/rest-amo.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(
-        {
-            "name": values.name,
-            "phone": values.phone,
-            "email": values.email,
-        },
-      )
+      body: JSON.stringify(dataToSend)
     })
     .then(data => {
       if (data.ok) {
@@ -59,6 +59,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
         navigate('/success')
         console.log(data);
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
+        return data.json()
       } else {
         setIsLoading(false)
         navigate('/success')
@@ -66,6 +67,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
       }
     })
+    .then((data) => console.log(data))
     .catch(err => {
       setIsLoading(false)
       navigate('/success')
