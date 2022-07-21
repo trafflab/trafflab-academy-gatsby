@@ -40,28 +40,37 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const handleSendClick = (evt) => {
     evt.preventDefault()
     setIsLoading(true)
-
-    let data = new FormData()
-    data.append('name', values.name);
-    data.append('phone', values.phone);
-    data.append('email', values.email);
-
-    fetch('/api/amo-crm/amo.php', {
+    fetch('https://traffacademy.com/api/amo-crm/rest-amo.php', {
       method: 'POST',
-      body: data,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(
+        {
+            "name": values.name,
+            "phone": values.phone,
+            "email": values.email,
+        },
+      )
     })
-    .then((res ) => {
-      if (res.ok) {
+    .then(data => {
+      if (data.ok) {
         setIsLoading(false)
         navigate('/success')
+        console.log(data);
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
-
       } else {
         setIsLoading(false)
         navigate('/success')
-        console.log('ph form error')
+        console.log(data)
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
       }
+    })
+    .catch(err => {
+      setIsLoading(false)
+      navigate('/success')
+      console.log(err)
+      if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
     })
   }
 

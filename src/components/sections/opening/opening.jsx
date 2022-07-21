@@ -43,23 +43,6 @@ export default function Opening() {
     }
   `).markdownRemark.frontmatter.opening
 
-  const handleTest = () => {
-    fetch('https://traffacademy.com/api/amo-crm/rest-amo.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(
-        {
-            "name": "test",
-            "phone": '20000',
-            "email": "bla"
-        },
-      )
-    })
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
-  }
   return (
     <section id='opening' className={styles.opening}>
       <div className={styles.content}>
@@ -74,7 +57,6 @@ export default function Opening() {
 
           <div className={styles.buttonContainer}>
             <BasicButton handler={openFormPopup} text={is480 ? data.buttonText_480 : data.buttonText}/>
-            <BasicButton handler={handleTest} text={'test'}/>
 
           </div>
           <div className={styles.gift}>
