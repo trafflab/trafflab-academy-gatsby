@@ -8,7 +8,7 @@ import useForm from '../../../hooks/use-form';
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 import {Loader} from "../../ui";
-import PhoneInput from 'react-phone-input-2'
+import PhoneInput from 'react-phone-input-2';
 
 export default function FormPopup({ closeHandler, isOpen }) {
   const data = useStaticQuery(graphql`
@@ -46,7 +46,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
       email: values.email,
     }
     console.log(dataToSend);
-    fetch('https://traffacademy.com/api/amo-crm/rest-amo.php', {
+    fetch('https://trafflab-api.space/amo-crm/rest-amo.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -110,6 +110,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
               inputProps={{
                 name: 'phone',
                 required: true,
+                minLength: "15"
               }}
               placeholder='Телефон'
               value={values.phone}
@@ -117,8 +118,9 @@ export default function FormPopup({ closeHandler, isOpen }) {
               inputClass={styles.phoneInput}
               containerClass={styles.phoneInputContainer}
               buttonClass={styles.phoneInputButton}
-              dropdownClass={styles.phoneInputdropdown}
-              disableDropdown={false}
+              dropdownClass={styles.phoneInputDropdown}
+              searchClass={styles.phoneInputSearch}
+              disableDropdown={true}
             />
             <BasicInput
               name='email'

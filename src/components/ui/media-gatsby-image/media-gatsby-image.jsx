@@ -1,7 +1,7 @@
 import * as React from "react"
 import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image";
 
-export default function MediaGatsbyImage({ image, image_480, alt }) {
+export default function MediaGatsbyImage({ image, image_480, alt='trafflab' }) {
   
   const images =  withArtDirection(getImage(image ? image : image_480), [
     {
