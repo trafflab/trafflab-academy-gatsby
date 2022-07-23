@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Trafflab Academy`,
-    siteUrl: `https://luxury-smakager-89e9c5.netlify.app`
+    siteUrl: `https://traffacademy.com`
   },
   plugins: [
     "gatsby-plugin-image",
