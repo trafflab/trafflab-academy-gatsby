@@ -46,7 +46,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
       email: values.email,
     }
     console.log(dataToSend);
-    fetch('https://trafflab-api.space/amo-crm/rest-amo.php', {
+    fetch('http://alantr86.beget.tech/rest-amo.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
