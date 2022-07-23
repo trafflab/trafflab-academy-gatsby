@@ -1,6 +1,6 @@
 import React from "react";
 
-export function useIs480() {
+export default function useIs480() {
   const [is480, setIs480] = React.useState('init');
 
   const handleCheckIs480 = () => {
@@ -18,7 +18,7 @@ export function useIs480() {
   return is480;
 }
 
-export default function useIs480v1() {
+export function useIs480v1() {
   const [is480, setIs480] = React.useState('init');
 
   React.useEffect(() => {
