@@ -4,8 +4,8 @@ export function useIs480() {
   const [is480, setIs480] = React.useState('init');
 
   const handleCheckIs480 = () => {
-    if (document.body.clientWidth <= 480 && (is480 ==='init' || !is480)) return true
-    else if (document.body.clientWidth > 480 && (is480 ==='init' || is480)) return false
+    if (document.body.clientWidth <= 480) return true
+    else if (document.body.clientWidth > 480) return false
   }
   React.useEffect(() => {
     const handleResize = () => setIs480(handleCheckIs480())
