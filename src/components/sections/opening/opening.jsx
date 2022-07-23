@@ -43,6 +43,8 @@ export default function Opening() {
     }
   `).markdownRemark.frontmatter.opening
 
+  console.log(is480);
+
   return (
     <section id='opening' className={styles.opening}>
       <div className={styles.content}>
