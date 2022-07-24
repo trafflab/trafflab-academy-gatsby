@@ -38,6 +38,7 @@ export default function Success() {
       }
     }
   `).markdownRemark.frontmatter.success
+
   return (
     <div className={styles.successPage}>
       <main className={styles.main}>

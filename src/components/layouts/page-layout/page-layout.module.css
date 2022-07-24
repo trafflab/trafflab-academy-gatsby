@@ -5,4 +5,18 @@
   background-color: var(--c-dark-1);
   position: relative;
   font-family: var(--f-basic);
+  overflow: hidden;
+}
+
+.loaderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-dark-1);
+  z-index: 10000;
 }

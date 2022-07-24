@@ -7,10 +7,22 @@ import { Is480Context } from '../../../utils/contexts';
 import { Helmet } from 'react-helmet';
 import favicon from '../../../images/misc/favicon.ico'
 import { YMInitializer } from 'react-yandex-metrika';
+import { Loader } from '../../ui';
 
 export default function PageLayout({ children }) {
-
+  const [pageIsLoading, setPageIsLoading] = React.useState(true)
   const is480 = useIs480()
+
+  React.useEffect(() => {
+    const setIsLoaded = () => {
+      setPageIsLoading(false);
+      console.log('loaded');
+    } 
+
+    window.addEventListener('load', setIsLoaded)
+    
+    return () => window.removeEventListener('load', setIsLoaded)
+  }, [])
 
   return (
     <Is480Context.Provider value={is480}>
@@ -25,8 +37,11 @@ export default function PageLayout({ children }) {
         <meta name="google-site-verification" content="WIioruuTqjwjxZLLtd6XLTpy892y3B2tSbQjm7q825Q" />
         <title>Trafflab Academy</title>
       </Helmet>
-      <div className={styles.page}>
+      <div className={styles.page} style={{height: pageIsLoading ? '100vh' : '100%'}}>
         {children}
+        <div className={styles.loaderContainer} style={{display: pageIsLoading ? 'flex' : 'none'}}>
+          <Loader />
+        </div>
         <YMInitializer accounts={[89616968]} options={{webvisor: false}} version="2" />
       </div>
     </Is480Context.Provider>
