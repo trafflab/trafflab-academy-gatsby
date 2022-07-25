@@ -30,8 +30,8 @@ export default function Footer() {
         <div className={styles.navContainer}>
           <NavList isFooter={true} />
           <div className={styles.docs}>
-            <a href='#' download>Договор оферты</a>
-            <a href='#' download>Политика конфиднциальности</a>
+            <a href='https://trafflab.online/oferta' >Договор оферты</a>
+            <a href='https://trafflab.online/policy' >Политика конфиднциальности</a>
           </div>
         </div>
         <p className={styles.year}>{year} &copy; TraffLab. Все права защищены.</p>

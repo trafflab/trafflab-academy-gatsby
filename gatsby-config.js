@@ -10,10 +10,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        serialize: () => ([{
-          url: './',
-          lastmod: new Date(),
-        }])
+        output: '/',
+        resolveSiteUrl: () => 'https://traffacademy.com',
       }
     },
   // {
