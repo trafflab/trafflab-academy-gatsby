@@ -12,32 +12,32 @@ export default function BgElements() {
           bgElements {
             openingBg {
               childImageSharp {
-                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: NONE )
+                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             openingBg_480 {
               childImageSharp {
-                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: NONE )
+                gatsbyImageData(quality: 90, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             bubbles {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: NONE )
+                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }
             bubbles_480 {
               bubble {
                 childImageSharp {
-                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: NONE )
+                  gatsbyImageData(quality: 1, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
             }
             items {
               item {
                 childImageSharp {
-                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
+                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               } 
             }

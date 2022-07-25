@@ -29,12 +29,12 @@ export default function Opening() {
             imageAlt
             personImage {
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             personImage_480 {
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE)
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }

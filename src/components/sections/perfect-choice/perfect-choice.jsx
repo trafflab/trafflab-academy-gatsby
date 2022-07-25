@@ -20,7 +20,7 @@ export default function PerfectChoice() {
             cards {
               cardImage {
                 childImageSharp {
-                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
+                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
               imageAlt

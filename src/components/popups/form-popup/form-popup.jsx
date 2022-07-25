@@ -20,12 +20,12 @@ export default function FormPopup({ closeHandler, isOpen }) {
             subtitle
             bookImage {
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
             bookImage_480 {
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
               }
             }
           }
@@ -45,7 +45,6 @@ export default function FormPopup({ closeHandler, isOpen }) {
       phone: values.phone,
       email: values.email,
     }
-    console.log(dataToSend);
     fetch('https://trafflab-api.space/rest-amo.php', {
       method: 'POST',
       headers: {
@@ -57,13 +56,11 @@ export default function FormPopup({ closeHandler, isOpen }) {
       if (data.ok) {
         setIsLoading(false)
         navigate('/success')
-        console.log(data);
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
         return data.json()
       } else {
         setIsLoading(false)
         navigate('/success')
-        console.log(data)
         if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
       }
     })

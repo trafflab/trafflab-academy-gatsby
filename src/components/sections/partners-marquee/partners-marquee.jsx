@@ -14,7 +14,7 @@ export default function PartnersMarquee() {
             partners {
               partnerLogo {
                 childImageSharp {
-                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: NONE )
+                  gatsbyImageData(quality: 70, layout: CONSTRAINED, placeholder: BLURRED )
                 }
               }
               dimensionsStyle {
