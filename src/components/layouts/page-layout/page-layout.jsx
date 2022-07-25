@@ -27,9 +27,6 @@ export default function PageLayout({ children }) {
       </Helmet>
       <div className={styles.page}>
         {children}
-        <div className={styles.loaderContainer}>
-          <Loader />
-        </div>
         <YMInitializer accounts={[89616968]} options={{webvisor: false}} version="2" />
       </div>
     </Is480Context.Provider>
