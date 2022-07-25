@@ -19,8 +19,6 @@ export default function MediaGatsbyImage({ image, image_480, alt='trafflab' }) {
       style={{width: "100%", height:"100%"}}
       alt={alt}
       formats={["auto", "webp", "avif"]}
-      placeholder='blurred'
-      blurr
     />
   )
 }

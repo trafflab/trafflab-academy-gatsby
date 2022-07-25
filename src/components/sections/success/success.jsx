@@ -18,18 +18,18 @@ export default function Success() {
           success {
             image{
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
               }
             }
             image_480 {
               childImageSharp {
-                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+                gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
               }
             }
             coins {
               coin {
                 childImageSharp {
-                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: BLURRED )
+                  gatsbyImageData(quality: 99, layout: CONSTRAINED, placeholder: NONE )
                 }
               }
             }
