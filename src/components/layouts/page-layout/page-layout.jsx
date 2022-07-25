@@ -7,7 +7,6 @@ import { Is480Context } from '../../../utils/contexts';
 import { Helmet } from 'react-helmet';
 import favicon from '../../../images/misc/favicon.ico'
 import { YMInitializer } from 'react-yandex-metrika';
-import { Loader } from '../../ui';
 
 export default function PageLayout({ children }) {
   const is480 = useIs480()
