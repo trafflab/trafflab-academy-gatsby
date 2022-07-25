@@ -9,6 +9,7 @@ import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 import {Loader} from "../../ui";
 import PhoneInput from 'react-phone-input-2';
+import queryString from "query-string";
 
 export default function FormPopup({ closeHandler, isOpen }) {
   const data = useStaticQuery(graphql`
@@ -40,11 +41,20 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const handleSendClick = (evt) => {
     evt.preventDefault()
     setIsLoading(true)
+    const utmData = typeof window !== 'undefined' ? queryString.parse(window.location.search) : false;
+
     const dataToSend = {
       name: values.name,
       phone: values.phone,
       email: values.email,
+      utm_source: utmData?.utm_source || '',
+      utm_content: utmData?.utm_content || '',
+      utm_medium: utmData?.utm_medium || '',
+      utm_campaign: utmData?.utm_campaign || '',
+      utm_term: utmData?.utm_term || '',
+      utm_referrer: utmData?.utm_referrer || '',
     }
+
     fetch('https://trafflab-api.space/rest-amo.php', {
       method: 'POST',
       headers: {
@@ -72,7 +82,6 @@ export default function FormPopup({ closeHandler, isOpen }) {
       if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
     })
   }
-
 
   React.useEffect(() => {
     handleReset()
@@ -136,7 +145,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
                   <BasicButton
                     type="submit"
                     text='Отправить'
-                    isActive={isValid}
+                    isActive={!isValid}
                     handler={handleSendClick}
                   />
                 </div>
