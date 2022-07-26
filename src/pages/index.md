@@ -1,7 +1,7 @@
 ---
 opening:
   tag: 'Бесплатный вебинар'
-  time: '25 июля в 19:00 МСК'
+  time: '26 июля в 19:00 МСК'
   name: Тамерлан Сафиуллин
   jobTitle: CEO TRAFFLAB
   buttonText: 'Участвовать бесплатно'
