@@ -56,40 +56,32 @@ export default function FormPopup({ closeHandler, isOpen }) {
     }
     console.log(dataToSend);
 
-    // fetch('https://trafflab-api.space/rest-amo.php', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(dataToSend)
-    // })
-    // .then(data => {
-    //   if (data.ok) {
-    //     setIsLoading(false)
-    //     navigate('/success')
-    //     if (typeof window !== 'undefined') {
-    //       if (window.fbq != null) {
-    //         window.fbq('track', 'Lead');
-    //         console.log('lead has send');
-    //       }
-    //       if (window.yaCounter89616968 != null) {
-    //         window.yaCounter89616968.reachGoal('send_form');
-    //       }
-    //     }
-    //     return data.json()
-    //   } else {
-    //     setIsLoading(false)
-    //     navigate('/success')
-    //     if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
-    //   }
-    // })
-    // .then((data) => console.log(data))
-    // .catch(err => {
-    //   setIsLoading(false)
-    //   navigate('/success')
-    //   console.log(err)
-    //   if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
-    // })
+    fetch('https://trafflab-api.space/rest-amo.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(dataToSend)
+    })
+    .then(data => {
+      if (data.ok) {
+        setIsLoading(false)
+        navigate('/success')
+        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form');
+        return data.json()
+      } else {
+        setIsLoading(false)
+        navigate('/success')
+        if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
+      }
+    })
+    .then((data) => console.log(data))
+    .catch(err => {
+      setIsLoading(false)
+      navigate('/success')
+      console.log(err)
+      if (typeof window !== 'undefined') window.yaCounter89616968.reachGoal('send_form_error');
+    })
   }
 
   React.useEffect(() => {
