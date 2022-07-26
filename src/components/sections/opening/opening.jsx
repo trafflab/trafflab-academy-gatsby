@@ -41,8 +41,24 @@ export default function Opening() {
         }
       }
     }
-  `).markdownRemark.frontmatter.opening
-
+  `).markdownRemark.frontmatter.opening;
+  
+  const [eventTime, setEventTime] = React.useState();
+  React.useEffect(() => {
+    const options = {
+      month: 'long',
+      day: 'numeric',
+      timezone: 'UTC + 3',
+    };
+    const now = new Date()
+    const time = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate(),
+      (now.getHours() + 5)
+    ).toLocaleString('ru', options)
+    setEventTime(time)
+  }, [])
 
   return (
     <section id='opening' className={styles.opening}>
@@ -51,7 +67,7 @@ export default function Opening() {
         <div className={styles.textContainer}>
           <div className={styles.about}>
             <div className={styles.tag}>{data.tag}</div>
-            <p className={styles.time}>{data.time}</p>
+            <p className={styles.time}>{`${eventTime} в 19:00 МСК`}</p>
           </div>
 
           <h1 className={styles.title}>Как зарабатывать<br/>от 30 000 $ на арбитраже трафика</h1>
