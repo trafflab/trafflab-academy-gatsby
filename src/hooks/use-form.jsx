@@ -6,6 +6,10 @@ export default function useForm() {
   
   const handleChange = (evt) => {
     if (typeof evt === 'string') {
+      if (evt === '89') {
+        setValues({...values, phone: '79'})
+        return
+      } 
       setValues({...values, phone: evt})
       return
     } 

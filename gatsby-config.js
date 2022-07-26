@@ -38,12 +38,12 @@ module.exports = {
     },
     __key: "pages"
   },
-  {
-    resolve: `gatsby-plugin-facebook-pixel`,
-    options: {
-      pixelId: "856864205282797",
-    },
-  },
+  // {
+  //   resolve: `gatsby-plugin-facebook-pixel`,
+  //   options: {
+  //     pixelId: "856864205282797",
+  //   },
+  // },
   {
     resolve: `gatsby-plugin-google-gtag`,
     options: {
