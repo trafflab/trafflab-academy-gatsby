@@ -2,7 +2,7 @@
 opening:
   tag: 'Бесплатный вебинар'
   time: '26 июля в 19:00 МСК'
-  name: Тамерлан Сафиуллин
+  name: 'Тамерлан Сафиуллин'
   jobTitle: CEO TRAFFLAB
   buttonText: 'Участвовать бесплатно'
   buttonText_480: 'Присоединиться'
