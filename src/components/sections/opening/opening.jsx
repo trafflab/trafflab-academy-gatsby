@@ -67,7 +67,7 @@ export default function Opening() {
         <div className={styles.textContainer}>
           <div className={styles.about}>
             <div className={styles.tag}>{data.tag}</div>
-            <p className={styles.time}>{`${eventTime} в 19:00 МСК`}</p>
+            <p className={styles.time}>31 июля в 16:00 МСК</p>
           </div>
 
           <h1 className={styles.title}>Как зарабатывать<br/>от 30 000 $ на арбитраже трафика</h1>
