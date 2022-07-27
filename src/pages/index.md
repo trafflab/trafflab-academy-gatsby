@@ -1,9 +1,12 @@
 ---
 opening:
   tag: 'Бесплатный вебинар'
-  time: '26 июля в 19:00 МСК'
-  name: Тамерлан Сафиуллин
-  jobTitle: CEO TRAFFLAB
+  time: '31 июля в 16:00 МСК'
+  title:
+    - part: 'Как зарабатывать'
+    - part: 'от 3000 $ на арбитраже трафика'
+  name: 'Тамерлан Сафиуллин'
+  jobTitle: 'CEO TRAFFLAB'
   buttonText: 'Участвовать бесплатно'
   buttonText_480: 'Присоединиться'
   giftText: 'Зарегистрируйся и получи гайд «5 шагов для заработка от 3000$ в месяц в онлайне»'
@@ -22,8 +25,8 @@ whatIsIt:
   image_480: ../images/what-is-it/image_480.png
   text: 'Арбитраж трафика – это заработок на привлечении клиентов в разные сферы бизнеса'
   title: 
-    - part: Что такое
-    - part: арбитраж трафика?
+    - part: 'Что такое'
+    - part: 'арбитраж трафика?'
   cards:
         - text: 'Свобода в выборе рабочего графика и локации'
         - text: 'Самый доступный и быстрый социальный лифт в 2022-2023 году!'
@@ -156,9 +159,9 @@ participate:
   bgBubble: ../images/bg-elements/b-participate.png
   bgBubble_480: ../images/bg-elements/b-participate_480.png
   title:  'Живая встреча '
-  subtitle: Не автовебинар!
-  text: На встрече вы сможете задать все интересующие вопросы Тамерлану и арбитражникам из его команды
-  buttonText: Принять участие
+  subtitle: 'Не автовебинар!'
+  text: 'На встрече вы сможете задать все интересующие вопросы Тамерлану и арбитражникам из его команды'
+  buttonText: 'Принять участие'
 bgElements:
   openingBg: ../images/bg-elements/bg-lucky-cat.png
   openingBg_480: ../images/bg-elements/bg-lucky-cat_480.png
@@ -191,8 +194,8 @@ bgElements:
     - item: ../images/bg-elements/i-9.png
     - item: ../images/bg-elements/i-10.png
 formPopup:
-  title: Хотите узнать больше про курс?
-  subtitle: Получите подробную программу обучения
+  title: 'Хотите узнать больше про курс?'
+  subtitle: 'Получите подробную программу обучения'
   bookImage: ../images/form-popup/book.png
   bookImage_480: ../images/form-popup/book_480.png
 success:

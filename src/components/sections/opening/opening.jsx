@@ -17,6 +17,9 @@ export default function Opening() {
             buttonText
             buttonText_480
             time
+            title {
+              part
+            }
             cards {
               title
               text
@@ -67,10 +70,10 @@ export default function Opening() {
         <div className={styles.textContainer}>
           <div className={styles.about}>
             <div className={styles.tag}>{data.tag}</div>
-            <p className={styles.time}>31 июля в 16:00 МСК</p>
+            <p className={styles.time}>{data.time}</p>
           </div>
 
-          <h1 className={styles.title}>Как зарабатывать<br/>от 3000 $ на арбитраже трафика</h1>
+          <h1 className={styles.title}>{data.title[0].part}<br/>{data.title[1].part}</h1>
 
           <div className={styles.buttonContainer}>
             <BasicButton handler={openFormPopup} text={is480 ? data.buttonText_480 : data.buttonText}/>
