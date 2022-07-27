@@ -11,7 +11,7 @@ export default function SuccessPage() {
   return (
     <PageLayout>
       <Helmet>
-        <script>
+        {/* <script>
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -31,7 +31,7 @@ export default function SuccessPage() {
           src="https://www.facebook.com/tr?id=856864205282797&ev=PageView&noscript=1"
           />
           `}
-        </noscript>
+        </noscript> */}
       </Helmet>
       <Success/>
     </PageLayout>
