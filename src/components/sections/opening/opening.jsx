@@ -70,7 +70,7 @@ export default function Opening() {
             <p className={styles.time}>31 июля в 16:00 МСК</p>
           </div>
 
-          <h1 className={styles.title}>Как зарабатывать<br/>от 30 000 $ на арбитраже трафика</h1>
+          <h1 className={styles.title}>Как зарабатывать<br/>от 3000 $ на арбитраже трафика</h1>
 
           <div className={styles.buttonContainer}>
             <BasicButton handler={openFormPopup} text={is480 ? data.buttonText_480 : data.buttonText}/>
