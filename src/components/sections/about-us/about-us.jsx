@@ -51,7 +51,7 @@ export default function AboutUs() {
           <li className={`${styles.element} ${styles.turnover}`}>
             <AboutUsCard>
               <CoinIcon isBig />
-              <p className={styles.listText}>Оборот на команду<br/> за 2021:<br/><span style={{fontWeight: "700"}}>15 000 000 $</span></p>
+              <p className={styles.listText}>Оборот на команду<br/> за 2021:<br/><span content="telephone=no" style={{fontWeight: "700", color: 'white'}}>15 000 000 $</span></p>
             </AboutUsCard>
           </li>
           <li className={`${styles.element} ${styles.team}`}>
