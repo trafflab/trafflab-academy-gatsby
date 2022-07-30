@@ -89,6 +89,12 @@
   line-height: 32rem;
   color: var(--c-white);
   font-family: var(--f-basic);
+  text-decoration: none;
+}
+
+.millions {
+  color: var(--c-white)!important;
+  text-decoration: none!important;
 }
 
 
