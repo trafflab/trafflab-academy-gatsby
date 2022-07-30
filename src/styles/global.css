@@ -56,6 +56,11 @@ h1, h2, h3, h4, h5, p, pre {
   margin: 0;
 }
 
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
 @keyframes openAniamtion {
   0% {opacity: 0}
   100% {opacity: 1}
